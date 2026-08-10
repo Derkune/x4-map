@@ -987,6 +987,9 @@ function setupViewport(svg, world, clusters) {
   let dragging = false;
   let lastX = 0;
   let lastY = 0;
+  /** @type {Map<number, { clientX: number, clientY: number }>} */
+  const activePointers = new Map();
+  let pinchDistance = 0;
 
   function clientToSvg(clientX, clientY) {
     const pt = svg.createSVGPoint();
@@ -998,36 +1001,85 @@ function setupViewport(svg, world, clusters) {
     return { x: local.x, y: local.y };
   }
 
+  function zoomAt(clientX, clientY, factor) {
+    const anchor = clientToSvg(clientX, clientY);
+    const fx = (anchor.x - view.x) / view.w;
+    const fy = (anchor.y - view.y) / view.h;
+    const newW = view.w * factor;
+    const newH = view.h * factor;
+    view.x = anchor.x - fx * newW;
+    view.y = anchor.y - fy * newH;
+    view.w = newW;
+    view.h = newH;
+    applyView();
+  }
+
+  function pointerDistance(a, b) {
+    const dx = a.clientX - b.clientX;
+    const dy = a.clientY - b.clientY;
+    return Math.hypot(dx, dy);
+  }
+
+  function stopPan() {
+    dragging = false;
+    stage?.classList.remove("dragging");
+  }
+
   svg.addEventListener(
     "wheel",
     (event) => {
       event.preventDefault();
       const factor = event.deltaY < 0 ? 0.9 : 1.1;
-      const mouse = clientToSvg(event.clientX, event.clientY);
-      const fx = (mouse.x - view.x) / view.w;
-      const fy = (mouse.y - view.y) / view.h;
-      const newW = view.w * factor;
-      const newH = view.h * factor;
-      view.x = mouse.x - fx * newW;
-      view.y = mouse.y - fy * newH;
-      view.w = newW;
-      view.h = newH;
-      applyView();
+      zoomAt(event.clientX, event.clientY, factor);
     },
     { passive: false },
   );
 
   svg.addEventListener("pointerdown", (event) => {
     if (event.button !== 0) return;
+    activePointers.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+    });
+    svg.setPointerCapture(event.pointerId);
+
+    if (activePointers.size === 2) {
+      stopPan();
+      const [a, b] = activePointers.values();
+      pinchDistance = pointerDistance(a, b);
+      return;
+    }
+
+    if (activePointers.size !== 1) return;
     dragging = true;
     lastX = event.clientX;
     lastY = event.clientY;
-    svg.setPointerCapture(event.pointerId);
     stage?.classList.add("dragging");
   });
 
   svg.addEventListener("pointermove", (event) => {
-    if (!dragging) return;
+    if (!activePointers.has(event.pointerId)) return;
+    activePointers.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+    });
+
+    if (activePointers.size === 2) {
+      const [a, b] = activePointers.values();
+      const distance = pointerDistance(a, b);
+      if (pinchDistance > 0 && distance > 0) {
+        const factor = pinchDistance / distance;
+        zoomAt(
+          (a.clientX + b.clientX) / 2,
+          (a.clientY + b.clientY) / 2,
+          factor,
+        );
+      }
+      pinchDistance = distance;
+      return;
+    }
+
+    if (!dragging || activePointers.size !== 1) return;
     const rect = svg.getBoundingClientRect();
     const dx = ((event.clientX - lastX) / rect.width) * view.w;
     const dy = ((event.clientY - lastY) / rect.height) * view.h;
@@ -1038,10 +1090,11 @@ function setupViewport(svg, world, clusters) {
     applyView();
   });
 
-  function endDrag(event) {
-    if (!dragging) return;
-    dragging = false;
-    stage?.classList.remove("dragging");
+  function endPointer(event) {
+    if (!activePointers.has(event.pointerId)) return;
+    activePointers.delete(event.pointerId);
+    pinchDistance = 0;
+    stopPan();
     try {
       svg.releasePointerCapture(event.pointerId);
     } catch {
@@ -1049,8 +1102,8 @@ function setupViewport(svg, world, clusters) {
     }
   }
 
-  svg.addEventListener("pointerup", endDrag);
-  svg.addEventListener("pointercancel", endDrag);
+  svg.addEventListener("pointerup", endPointer);
+  svg.addEventListener("pointercancel", endPointer);
 
   // Keep unused param referenced for future transforms.
   void world;
