@@ -259,6 +259,7 @@ body {
 .map-stage {
   position: relative;
   overflow: hidden;
+  touch-action: none;
   background:
     radial-gradient(ellipse at 30% 20%, #182437 0%, transparent 55%),
     radial-gradient(ellipse at 70% 80%, #141d2c 0%, transparent 50%),

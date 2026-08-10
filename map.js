@@ -987,9 +987,8 @@ function setupViewport(svg, world, clusters) {
   let dragging = false;
   let lastX = 0;
   let lastY = 0;
-  /** @type {Map<number, { clientX: number, clientY: number }>} */
-  const activePointers = new Map();
   let pinchDistance = 0;
+  let touchPanning = false;
 
   function clientToSvg(clientX, clientY) {
     const pt = svg.createSVGPoint();
@@ -1014,15 +1013,25 @@ function setupViewport(svg, world, clusters) {
     applyView();
   }
 
-  function pointerDistance(a, b) {
-    const dx = a.clientX - b.clientX;
-    const dy = a.clientY - b.clientY;
-    return Math.hypot(dx, dy);
+  function touchDistance(a, b) {
+    return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
   }
 
   function stopPan() {
     dragging = false;
+    touchPanning = false;
     stage?.classList.remove("dragging");
+  }
+
+  function panByClientDelta(clientX, clientY) {
+    const rect = svg.getBoundingClientRect();
+    const dx = ((clientX - lastX) / rect.width) * view.w;
+    const dy = ((clientY - lastY) / rect.height) * view.h;
+    view.x -= dx;
+    view.y -= dy;
+    lastX = clientX;
+    lastY = clientY;
+    applyView();
   }
 
   svg.addEventListener(
@@ -1035,65 +1044,26 @@ function setupViewport(svg, world, clusters) {
     { passive: false },
   );
 
+  // Mouse/pen only — touch is handled via Touch Events for Firefox multi-touch.
   svg.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "touch") return;
     if (event.button !== 0) return;
-    activePointers.set(event.pointerId, {
-      clientX: event.clientX,
-      clientY: event.clientY,
-    });
-    svg.setPointerCapture(event.pointerId);
-
-    if (activePointers.size === 2) {
-      stopPan();
-      const [a, b] = activePointers.values();
-      pinchDistance = pointerDistance(a, b);
-      return;
-    }
-
-    if (activePointers.size !== 1) return;
     dragging = true;
     lastX = event.clientX;
     lastY = event.clientY;
+    svg.setPointerCapture(event.pointerId);
     stage?.classList.add("dragging");
   });
 
   svg.addEventListener("pointermove", (event) => {
-    if (!activePointers.has(event.pointerId)) return;
-    activePointers.set(event.pointerId, {
-      clientX: event.clientX,
-      clientY: event.clientY,
-    });
-
-    if (activePointers.size === 2) {
-      const [a, b] = activePointers.values();
-      const distance = pointerDistance(a, b);
-      if (pinchDistance > 0 && distance > 0) {
-        const factor = pinchDistance / distance;
-        zoomAt(
-          (a.clientX + b.clientX) / 2,
-          (a.clientY + b.clientY) / 2,
-          factor,
-        );
-      }
-      pinchDistance = distance;
-      return;
-    }
-
-    if (!dragging || activePointers.size !== 1) return;
-    const rect = svg.getBoundingClientRect();
-    const dx = ((event.clientX - lastX) / rect.width) * view.w;
-    const dy = ((event.clientY - lastY) / rect.height) * view.h;
-    view.x -= dx;
-    view.y -= dy;
-    lastX = event.clientX;
-    lastY = event.clientY;
-    applyView();
+    if (event.pointerType === "touch") return;
+    if (!dragging) return;
+    panByClientDelta(event.clientX, event.clientY);
   });
 
   function endPointer(event) {
-    if (!activePointers.has(event.pointerId)) return;
-    activePointers.delete(event.pointerId);
-    pinchDistance = 0;
+    if (event.pointerType === "touch") return;
+    if (!dragging) return;
     stopPan();
     try {
       svg.releasePointerCapture(event.pointerId);
@@ -1104,6 +1074,63 @@ function setupViewport(svg, world, clusters) {
 
   svg.addEventListener("pointerup", endPointer);
   svg.addEventListener("pointercancel", endPointer);
+
+  svg.addEventListener(
+    "touchstart",
+    (event) => {
+      event.preventDefault();
+      const touches = event.touches;
+      if (touches.length === 2) {
+        stopPan();
+        pinchDistance = touchDistance(touches[0], touches[1]);
+        return;
+      }
+      if (touches.length !== 1) {
+        stopPan();
+        pinchDistance = 0;
+        return;
+      }
+      touchPanning = true;
+      lastX = touches[0].clientX;
+      lastY = touches[0].clientY;
+      stage?.classList.add("dragging");
+    },
+    { passive: false },
+  );
+
+  svg.addEventListener(
+    "touchmove",
+    (event) => {
+      event.preventDefault();
+      const touches = event.touches;
+      if (touches.length === 2) {
+        const distance = touchDistance(touches[0], touches[1]);
+        if (pinchDistance > 0 && distance > 0) {
+          const factor = pinchDistance / distance;
+          zoomAt(
+            (touches[0].clientX + touches[1].clientX) / 2,
+            (touches[0].clientY + touches[1].clientY) / 2,
+            factor,
+          );
+        }
+        pinchDistance = distance;
+        return;
+      }
+      if (!touchPanning || touches.length !== 1) return;
+      panByClientDelta(touches[0].clientX, touches[0].clientY);
+    },
+    { passive: false },
+  );
+
+  function endTouch(event) {
+    event.preventDefault();
+    pinchDistance = 0;
+    // Do not auto-resume pan if a finger remains after pinch/lift.
+    stopPan();
+  }
+
+  svg.addEventListener("touchend", endTouch, { passive: false });
+  svg.addEventListener("touchcancel", endTouch, { passive: false });
 
   // Keep unused param referenced for future transforms.
   void world;
