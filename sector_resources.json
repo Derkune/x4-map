@@ -1,0 +1,1309 @@
+{
+  "sectors": {
+    "Adventure's Promise": {
+      "helium": 1,
+      "hydrogen": 3,
+      "methane": 3,
+      "nividium": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.71
+    },
+    "Antigone Memorial": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.26
+    },
+    "Argon Prime": {
+      "sunlight": 1.0
+    },
+    "Asteroid Belt": {
+      "helium": 5,
+      "hydrogen": 5,
+      "ice": 5,
+      "methane": 5,
+      "nividium": 5,
+      "ore": 5,
+      "silicon": 5,
+      "sunlight": 0.13
+    },
+    "Atiya's Misfortune I": {
+      "hydrogen": 3,
+      "nividium": 3,
+      "ore": 4,
+      "sunlight": 1.09
+    },
+    "Atiya's Misfortune III": {
+      "hydrogen": 3,
+      "nividium": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.93
+    },
+    "Atreus' Clouds": {
+      "hydrogen": 5,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 0.41
+    },
+    "Avarice I": {
+      "helium": 5,
+      "hydrogen": 3,
+      "ice": 5,
+      "methane": 3,
+      "nividium": 3,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 13.9
+    },
+    "Avarice IV": {
+      "helium": 5,
+      "hydrogen": 5,
+      "ice": 5,
+      "methane": 5,
+      "ore": 4,
+      "silicon": 5,
+      "sunlight": 13.9
+    },
+    "Avarice V Dead End": {
+      "helium": 5,
+      "hydrogen": 5,
+      "ice": 5,
+      "methane": 5,
+      "nividium": 5,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 13.9
+    },
+    "Barren Shores": {
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 0.83
+    },
+    "Black Hole Sun IV": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.16
+    },
+    "Black Hole Sun V": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "sunlight": 1.19
+    },
+    "Brennan's Triumph": {
+      "sunlight": 1.22
+    },
+    "Bright Promise": {
+      "sunlight": 2.04
+    },
+    "CEO's Doubt": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.82
+    },
+    "Cardinal's Domain": {
+      "helium": 1,
+      "hydrogen": 3,
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.24
+    },
+    "Cardinal's Redress": {
+      "hydrogen": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.88
+    },
+    "Circle of Deceit": {
+      "helium": 1,
+      "methane": 3,
+      "rawkhaakscrap": 3,
+      "rawscrap": 3,
+      "sunlight": 1.42
+    },
+    "Company Regard": {
+      "sunlight": 0.83
+    },
+    "Earth": {
+      "sunlight": 1.0
+    },
+    "Eighteen Billion": {
+      "helium": 2,
+      "methane": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.9
+    },
+    "Eleventh Hour": {
+      "sunlight": 1.18
+    },
+    "Emperor's Pride IV": {
+      "sunlight": 0.71
+    },
+    "Emperor's Pride VI": {
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.65
+    },
+    "Family Kritt": {
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 2.39
+    },
+    "Family Nhuut": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 3,
+      "methane": 1,
+      "nividium": 5,
+      "ore": 4,
+      "rawkhaakscrap": 3,
+      "rawscrap": 5,
+      "silicon": 4,
+      "sunlight": 0.85
+    },
+    "Family Tkr": {
+      "sunlight": 0.89
+    },
+    "Family Zhin": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "nividium": 2,
+      "ore": 5,
+      "silicon": 5,
+      "sunlight": 0.71
+    },
+    "Faulty Logic I": {
+      "hydrogen": 5,
+      "ore": 4,
+      "rawscrap": 2,
+      "silicon": 4,
+      "sunlight": 1.77
+    },
+    "Faulty Logic VII": {
+      "hydrogen": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.47
+    },
+    "Fires of Defeat": {
+      "rawscrap": 1,
+      "sunlight": 0.81
+    },
+    "Freedom's Reach": {
+      "sunlight": 2.21
+    },
+    "Frontier Edge": {
+      "helium": 1,
+      "hydrogen": 5,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.72
+    },
+    "Gaian Prophecy": {
+      "helium": 1,
+      "hydrogen": 3,
+      "methane": 3,
+      "nividium": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 2.08
+    },
+    "Getsu Fune": {
+      "ice": 4,
+      "ore": 4,
+      "rawkhaakscrap": 3,
+      "rawscrap": 3,
+      "silicon": 4,
+      "sunlight": 0.93
+    },
+    "Grand Exchange I": {
+      "hydrogen": 3,
+      "ice": 4,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.23
+    },
+    "Grand Exchange III": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "ore": 5,
+      "rawscrap": 1,
+      "silicon": 4,
+      "sunlight": 1.35
+    },
+    "Grand Exchange IV": {
+      "hydrogen": 1,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.29
+    },
+    "Great Reef": {
+      "helium": 3,
+      "hydrogen": 5,
+      "methane": 5,
+      "sunlight": 1.28
+    },
+    "Guiding Star V": {
+      "sunlight": 0.83
+    },
+    "Guiding Star VII": {
+      "ice": 4,
+      "sunlight": 0.71
+    },
+    "Hatikvah's Choice I": {
+      "sunlight": 1.12
+    },
+    "Hatikvah's Choice III": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.91
+    },
+    "Hatikvah's Faith": {
+      "ice": 3,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 0.88
+    },
+    "Heart of Acrimony I The Boneyard": {
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.64
+    },
+    "Heart of Acrimony II": {
+      "hydrogen": 3,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 5,
+      "sunlight": 2.45
+    },
+    "Heretic's End": {
+      "ore": 4,
+      "rawscrap": 1,
+      "sunlight": 1.81
+    },
+    "Hewa's Twin I": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.16
+    },
+    "Hewa's Twin II": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.02
+    },
+    "Hewa's Twin III": {
+      "sunlight": 0.86
+    },
+    "Hewa's Twin IV The Cove": {
+      "sunlight": 0.91
+    },
+    "Hewa's Twin V": {
+      "ore": 4,
+      "rawscrap": 3,
+      "silicon": 4,
+      "sunlight": 0.82
+    },
+    "Holy Vision": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 2.08
+    },
+    "Ianamus Zura IV": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "sunlight": 1.33
+    },
+    "Ianamus Zura VII": {
+      "ice": 4,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.15
+    },
+    "Jupiter": {
+      "sunlight": 0.1
+    },
+    "Kingdom End I": {
+      "sunlight": 1.18
+    },
+    "Lasting Vengeance": {
+      "hydrogen": 1,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.0
+    },
+    "Litany of Fury IX": {
+      "sunlight": 0.42
+    },
+    "Litany of Fury XII": {
+      "sunlight": 0.32
+    },
+    "Loomanckstrat's Legacy": {
+      "ice": 4,
+      "nividium": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.02
+    },
+    "Mars": {
+      "sunlight": 0.44
+    },
+    "Matrix #101": {
+      "ore": 3,
+      "rawkhaakscrap": 1,
+      "rawscrap": 4,
+      "silicon": 3,
+      "sunlight": 4.08
+    },
+    "Matrix #451": {
+      "hydrogen": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 2.01
+    },
+    "Matrix #598": {
+      "hydrogen": 3,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.77
+    },
+    "Matrix #79B": {
+      "hydrogen": 1,
+      "rawscrap": 2,
+      "sunlight": 2.39
+    },
+    "Matrix #9": {
+      "methane": 5,
+      "nividium": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.0
+    },
+    "Memory of Profit IX": {
+      "ice": 4,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.15
+    },
+    "Memory of Profit X": {
+      "sunlight": 1.06
+    },
+    "Menelaus' Oasis": {
+      "helium": 3,
+      "ore": 4,
+      "silicon": 3,
+      "sunlight": 2.71
+    },
+    "Mercury": {
+      "helium": 5,
+      "sunlight": 7.14
+    },
+    "Mi Ton's Refuge": {
+      "ice": 4,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.53
+    },
+    "Mists of Artemis": {
+      "helium": 1,
+      "hydrogen": 3,
+      "methane": 3,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.41
+    },
+    "Mitsuno's Defiance": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 3,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 5,
+      "silicon": 3,
+      "sunlight": 1.11
+    },
+    "Mitsuno's Revelation": {
+      "sunlight": 1.18
+    },
+    "Mitsuno's Sacrifice": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 4,
+      "methane": 3,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.06
+    },
+    "Moo-Kye's Revenge": {
+      "ice": 4,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.93
+    },
+    "Morning Star III": {
+      "sunlight": 0.76
+    },
+    "Morning Star IV": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 2,
+      "nividium": 5,
+      "ore": 5,
+      "silicon": 4,
+      "sunlight": 0.65
+    },
+    "Neptune": {
+      "helium": 3,
+      "hydrogen": 5,
+      "sunlight": 0.06
+    },
+    "Nopileos' Fortune II": {
+      "hydrogen": 5,
+      "ice": 4,
+      "nividium": 4,
+      "ore": 4,
+      "sunlight": 0.82
+    },
+    "Nopileos' Fortune VI": {
+      "sunlight": 0.78
+    },
+    "Nopileos' Memorial": {
+      "ice": 4,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.63
+    },
+    "Ocean of Fantasy": {
+      "rawscrap": 5,
+      "sunlight": 0.12
+    },
+    "Oort Cloud": {
+      "helium": 3,
+      "hydrogen": 5,
+      "ice": 4,
+      "methane": 5,
+      "nividium": 5,
+      "ore": 5,
+      "silicon": 5,
+      "sunlight": 0.02
+    },
+    "Open Market": {
+      "sunlight": 0.88
+    },
+    "Ore Belt": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 4,
+      "rawscrap": 5,
+      "sunlight": 1.34
+    },
+    "Path to Profit": {
+      "hydrogen": 5,
+      "sunlight": 1.43
+    },
+    "Pious Mists II": {
+      "sunlight": 1.36
+    },
+    "Pious Mists IV": {
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.89
+    },
+    "Pious Mists XI": {
+      "helium": 1,
+      "hydrogen": 5,
+      "nividium": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.18
+    },
+    "Pluto": {
+      "sunlight": 0.05
+    },
+    "Pontifex's Claim": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "sunlight": 1.94
+    },
+    "President's End": {
+      "ice": 4,
+      "nividium": 1,
+      "ore": 4,
+      "sunlight": 0.71
+    },
+    "Profit Center Alpha": {
+      "sunlight": 0.79
+    },
+    "Reflected Stars": {
+      "helium": 5,
+      "sunlight": 1.18
+    },
+    "Rhy's Defiance": {
+      "rawscrap": 5,
+      "sunlight": 1.63
+    },
+    "Rolk's Demise": {
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.15
+    },
+    "Sacred Relic": {
+      "sunlight": 0.71
+    },
+    "Sanctuary of Darkness": {
+      "ore": 1,
+      "silicon": 1,
+      "sunlight": 1.74
+    },
+    "Sanctum Verge": {
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.89
+    },
+    "Saturn Alpha": {
+      "sunlight": 0.08
+    },
+    "Saturn Beta": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 3,
+      "ore": 5,
+      "silicon": 5,
+      "sunlight": 0.08
+    },
+    "Savage Spur I": {
+      "helium": 3,
+      "hydrogen": 3,
+      "methane": 3,
+      "nividium": 5,
+      "ore": 3,
+      "silicon": 4,
+      "sunlight": 1.17
+    },
+    "Savage Spur II": {
+      "helium": 3,
+      "hydrogen": 3,
+      "methane": 3,
+      "nividium": 5,
+      "ore": 3,
+      "silicon": 4,
+      "sunlight": 1.25
+    },
+    "Scale Plate Green I": {
+      "hydrogen": 1,
+      "nividium": 2,
+      "ore": 4,
+      "rawscrap": 3,
+      "silicon": 4,
+      "sunlight": 1.26
+    },
+    "Scale Plate Green VII": {
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.15
+    },
+    "Scarlet Star": {
+      "helium": 1,
+      "ore": 3,
+      "rawscrap": 2,
+      "sunlight": 2.66
+    },
+    "Second Contact II Flashpoint": {
+      "hydrogen": 3,
+      "ice": 4,
+      "nividium": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.59
+    },
+    "Second Contact VII": {
+      "nividium": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.55
+    },
+    "Second Contact XI": {
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.47
+    },
+    "Segaris": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 3,
+      "methane": 1,
+      "nividium": 5,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 1.87
+    },
+    "Silent Witness I": {
+      "hydrogen": 5,
+      "nividium": 4,
+      "silicon": 4,
+      "sunlight": 0.98
+    },
+    "Silent Witness XI": {
+      "nividium": 5,
+      "ore": 5,
+      "silicon": 4,
+      "sunlight": 1.18
+    },
+    "Silent Witness XII": {
+      "ore": 4,
+      "rawkhaakscrap": 5,
+      "rawscrap": 5,
+      "silicon": 4,
+      "sunlight": 1.47
+    },
+    "Tempting Fumes": {
+      "helium": 5,
+      "sunlight": 1.66
+    },
+    "Tharka's Cascade XV": {
+      "hydrogen": 5,
+      "nividium": 2,
+      "ore": 4,
+      "rawscrap": 1,
+      "silicon": 4,
+      "sunlight": 1.42
+    },
+    "Tharka's Cascade XVII": {
+      "hydrogen": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.29
+    },
+    "Tharka's Ravine IV Tharka's Fall": {
+      "helium": 3,
+      "hydrogen": 5,
+      "ice": 4,
+      "methane": 5,
+      "sunlight": 1.31
+    },
+    "Tharka's Ravine VIII": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 4,
+      "methane": 3,
+      "sunlight": 1.26
+    },
+    "Tharka's Ravine XVI": {
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.17
+    },
+    "Tharka's Ravine XXIV": {
+      "sunlight": 1.09
+    },
+    "The Moon": {
+      "sunlight": 1.05
+    },
+    "The Reach": {
+      "ore": 4,
+      "sunlight": 3.67
+    },
+    "The Void": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 3,
+      "nividium": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.64
+    },
+    "Third Redemption": {
+      "ice": 5,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 3,
+      "sunlight": 1.0
+    },
+    "Thuruk's Demise II First Impact": {
+      "sunlight": 0.71
+    },
+    "Thuruk's Demise III": {
+      "sunlight": 0.59
+    },
+    "Titan": {
+      "hydrogen": 5,
+      "methane": 5,
+      "sunlight": 0.08
+    },
+    "Towering Wave": {
+      "sunlight": 1.18
+    },
+    "Trinity Sanctum III": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.33
+    },
+    "Trinity Sanctum VII": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "nividium": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.06
+    },
+    "True Sight": {
+      "sunlight": 0.71
+    },
+    "Turquoise Sea IX": {
+      "hydrogen": 3,
+      "nividium": 2,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.41
+    },
+    "Turquoise Sea X": {
+      "hydrogen": 3,
+      "nividium": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.28
+    },
+    "Two Grand": {
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.33
+    },
+    "Unholy Retribution": {
+      "sunlight": 1.63
+    },
+    "Unknown System": {
+      "hydrogen": 5,
+      "nividium": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.05
+    },
+    "Uranus": {
+      "sunlight": 0.07
+    },
+    "Venus": {
+      "sunlight": 1.89
+    },
+    "Void of Opportunity": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "nividium": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.83
+    },
+    "Watchful Gaze": {
+      "helium": 3,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 5,
+      "silicon": 4,
+      "sunlight": 0.41
+    },
+    "Windfall I Union Summit": {
+      "hydrogen": 3,
+      "ice": 5,
+      "nividium": 5,
+      "ore": 5,
+      "silicon": 2,
+      "sunlight": 0.2
+    },
+    "Windfall III The Hoard": {
+      "hydrogen": 5,
+      "sunlight": 0.16
+    },
+    "Windfall IV Aurora's Dream": {
+      "hydrogen": 5,
+      "ice": 4,
+      "nividium": 5,
+      "ore": 3,
+      "rawscrap": 3,
+      "silicon": 3,
+      "sunlight": 0.11
+    },
+    "Wretched Skies IV Family Valka": {
+      "sunlight": 1.3
+    },
+    "Wretched Skies V Family Phi": {
+      "sunlight": 1.23
+    },
+    "Wretched Skies X": {
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.08
+    },
+    "Zyarth's Dominion I": {
+      "sunlight": 1.42
+    },
+    "Zyarth's Dominion IV": {
+      "sunlight": 2.1
+    },
+    "Zyarth's Dominion X": {
+      "sunlight": 1.51
+    }
+  },
+  "7-versatile-sectors": {
+    "Avarice I": {
+      "helium": 5,
+      "hydrogen": 3,
+      "ice": 5,
+      "methane": 3,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 13.9
+    },
+    "Avarice IV": {
+      "helium": 5,
+      "hydrogen": 5,
+      "ice": 5,
+      "methane": 5,
+      "ore": 4,
+      "silicon": 5,
+      "sunlight": 13.9
+    },
+    "Avarice V Dead End": {
+      "helium": 5,
+      "hydrogen": 5,
+      "ice": 5,
+      "methane": 5,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 13.9
+    },
+    "CEO's Doubt": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.82
+    },
+    "Cardinal's Domain": {
+      "helium": 1,
+      "hydrogen": 3,
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.24
+    },
+    "Family Nhuut": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 3,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.85
+    },
+    "Grand Exchange III": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "ore": 5,
+      "silicon": 4,
+      "sunlight": 1.35
+    },
+    "Hatikvah's Choice III": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.91
+    },
+    "Holy Vision": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 2.08
+    },
+    "Mitsuno's Defiance": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 3,
+      "methane": 1,
+      "ore": 5,
+      "silicon": 3,
+      "sunlight": 1.11
+    },
+    "Mitsuno's Sacrifice": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.06
+    },
+    "Segaris": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 3,
+      "methane": 1,
+      "ore": 3,
+      "silicon": 3,
+      "sunlight": 1.87
+    },
+    "The Void": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.64
+    },
+    "Trinity Sanctum III": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.33
+    },
+    "Trinity Sanctum VII": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.06
+    }
+  },
+  "6-versatile-sectors": {
+    "Adventure's Promise": {
+      "helium": 1,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.71
+    },
+    "Antigone Memorial": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.26
+    },
+    "Asteroid Belt": {
+      "helium": 5,
+      "hydrogen": 5,
+      "ice": 5,
+      "methane": 5,
+      "ore": 5,
+      "silicon": 5
+    },
+    "Black Hole Sun IV": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.16
+    },
+    "Family Zhin": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 5,
+      "silicon": 5,
+      "sunlight": 0.71
+    },
+    "Frontier Edge": {
+      "helium": 1,
+      "hydrogen": 5,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.72
+    },
+    "Gaian Prophecy": {
+      "helium": 1,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 2.08
+    },
+    "Hewa's Twin I": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.16
+    },
+    "Hewa's Twin II": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.02
+    },
+    "Mists of Artemis": {
+      "helium": 1,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.41
+    },
+    "Oort Cloud": {
+      "helium": 3,
+      "hydrogen": 5,
+      "ice": 4,
+      "methane": 5,
+      "ore": 5,
+      "silicon": 5
+    },
+    "Savage Spur I": {
+      "helium": 3,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 3,
+      "silicon": 4,
+      "sunlight": 1.17
+    },
+    "Savage Spur II": {
+      "helium": 3,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 3,
+      "silicon": 4,
+      "sunlight": 1.25
+    },
+    "Void of Opportunity": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.83
+    }
+  },
+  "5-versatile-sectors": {
+    "Eighteen Billion": {
+      "helium": 2,
+      "methane": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.9
+    },
+    "Grand Exchange I": {
+      "hydrogen": 3,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.23
+    },
+    "Heart of Acrimony II": {
+      "hydrogen": 3,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 5,
+      "sunlight": 2.45
+    },
+    "Ianamus Zura IV": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "sunlight": 1.33
+    },
+    "Lasting Vengeance": {
+      "hydrogen": 1,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.0
+    },
+    "Matrix #598": {
+      "hydrogen": 3,
+      "ice": 4,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 0.77
+    },
+    "Morning Star IV": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 2,
+      "ore": 5,
+      "silicon": 4
+    },
+    "Ore Belt": {
+      "helium": 1,
+      "hydrogen": 1,
+      "methane": 1,
+      "ore": 4,
+      "sunlight": 1.34
+    },
+    "Pious Mists XI": {
+      "helium": 1,
+      "hydrogen": 5,
+      "ore": 4,
+      "silicon": 4,
+      "sunlight": 1.18
+    },
+    "Pontifex's Claim": {
+      "helium": 1,
+      "hydrogen": 1,
+      "ice": 4,
+      "methane": 1,
+      "sunlight": 1.94
+    },
+    "Saturn Beta": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 3,
+      "ore": 5,
+      "silicon": 5
+    },
+    "Tharka's Ravine IV Tharka's Fall": {
+      "helium": 3,
+      "hydrogen": 5,
+      "ice": 4,
+      "methane": 5,
+      "sunlight": 1.31
+    },
+    "Tharka's Ravine VIII": {
+      "helium": 3,
+      "hydrogen": 3,
+      "ice": 4,
+      "methane": 3,
+      "sunlight": 1.26
+    },
+    "Watchful Gaze": {
+      "helium": 3,
+      "hydrogen": 3,
+      "methane": 3,
+      "ore": 5,
+      "silicon": 4
+    }
+  },
+  "statistics": {
+    "sector_count": 152,
+    "helium": {
+      "min": 1,
+      "max": 5
+    },
+    "hydrogen": {
+      "min": 1,
+      "max": 5
+    },
+    "ice": {
+      "min": 2,
+      "max": 5
+    },
+    "methane": {
+      "min": 1,
+      "max": 5
+    },
+    "nividium": {
+      "min": 1,
+      "max": 5
+    },
+    "ore": {
+      "min": 1,
+      "max": 5
+    },
+    "rawkhaakscrap": {
+      "min": 1,
+      "max": 5
+    },
+    "rawscrap": {
+      "min": 1,
+      "max": 5
+    },
+    "silicon": {
+      "min": 1,
+      "max": 5
+    },
+    "sunlight": {
+      "min": 0.02,
+      "max": 13.9
+    }
+  }
+}

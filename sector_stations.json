@@ -1,0 +1,639 @@
+{
+  "factions": {
+    "alliance": "ALI",
+    "antigone": "ANT",
+    "argon": "ARG",
+    "boron": "BOR",
+    "civilian": "CIV",
+    "freesplit": "FRF",
+    "hatikvah": "HAT",
+    "holyorder": "HOP",
+    "kaori": "QUE",
+    "khaak": "KHK",
+    "loanshark": "VIG",
+    "ministry": "MIN",
+    "paranid": "PAR",
+    "pioneers": "PIO",
+    "scaleplate": "SCA",
+    "scavenger": "RIP",
+    "split": "ZYA",
+    "teladi": "TEL",
+    "terran": "TER",
+    "xenon": "XEN",
+    "yaki": "YAK"
+  },
+  "sectors": {
+    "Antigone Memorial": [
+      {
+        "category": "shipyard",
+        "owner": "antigone"
+      },
+      {
+        "category": "wharf",
+        "owner": "antigone"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Argon Prime": [
+      {
+        "category": "shipyard",
+        "owner": "argon"
+      },
+      {
+        "category": "wharf",
+        "owner": "argon"
+      }
+    ],
+    "Atiya's Misfortune I": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      }
+    ],
+    "Atreus' Clouds": [
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Avarice I": [
+      {
+        "category": "shipyard",
+        "owner": "scavenger"
+      },
+      {
+        "category": "wharf",
+        "owner": "scavenger"
+      }
+    ],
+    "Barren Shores": [
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Black Hole Sun IV": [
+      {
+        "category": "equipmentdock",
+        "owner": "argon"
+      }
+    ],
+    "Black Hole Sun V": [
+      {
+        "category": "tradestation",
+        "owner": "argon"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Brennan's Triumph": [
+      {
+        "category": "shipyard",
+        "owner": "pioneers"
+      },
+      {
+        "category": "wharf",
+        "owner": "pioneers"
+      }
+    ],
+    "Bright Promise": [
+      {
+        "category": "equipmentdock",
+        "owner": "ministry"
+      }
+    ],
+    "Cardinal's Domain": [
+      {
+        "category": "tradestation",
+        "owner": "paranid"
+      }
+    ],
+    "Company Regard": [
+      {
+        "category": "equipmentdock",
+        "owner": "teladi"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Earth": [
+      {
+        "category": "tradestation",
+        "owner": "terran"
+      }
+    ],
+    "Eighteen Billion": [
+      {
+        "category": "shipyard",
+        "owner": "ministry"
+      },
+      {
+        "category": "wharf",
+        "owner": "ministry"
+      }
+    ],
+    "Emperor's Pride VI": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      }
+    ],
+    "Family Tkr": [
+      {
+        "category": "equipmentdock",
+        "owner": "freesplit"
+      }
+    ],
+    "Family Zhin": [
+      {
+        "category": "equipmentdock",
+        "owner": "split"
+      }
+    ],
+    "Gaian Prophecy": [
+      {
+        "category": "tradestation",
+        "owner": "pioneers"
+      }
+    ],
+    "Grand Exchange III": [
+      {
+        "category": "tradestation",
+        "owner": "teladi"
+      },
+      {
+        "category": "piratebase",
+        "owner": "scaleplate"
+      }
+    ],
+    "Great Reef": [
+      {
+        "category": "wharf",
+        "owner": "boron"
+      }
+    ],
+    "Guiding Star VII": [
+      {
+        "category": "wharf",
+        "owner": "argon"
+      }
+    ],
+    "Hatikvah's Choice I": [
+      {
+        "category": "tradestation",
+        "owner": "hatikvah"
+      }
+    ],
+    "Hatikvah's Choice III": [
+      {
+        "category": "equipmentdock",
+        "owner": "argon"
+      }
+    ],
+    "Heart of Acrimony II": [
+      {
+        "category": "shipyard",
+        "owner": "freesplit"
+      },
+      {
+        "category": "wharf",
+        "owner": "freesplit"
+      }
+    ],
+    "Heretic's End": [
+      {
+        "category": "freeport",
+        "owner": "hatikvah"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Hewa's Twin I": [
+      {
+        "category": "tradestation",
+        "owner": "teladi"
+      }
+    ],
+    "Hewa's Twin IV The Cove": [
+      {
+        "category": "piratebase",
+        "owner": "scaleplate"
+      }
+    ],
+    "Holy Vision": [
+      {
+        "category": "shipyard",
+        "owner": "holyorder"
+      },
+      {
+        "category": "wharf",
+        "owner": "holyorder"
+      },
+      {
+        "category": "tradestation",
+        "owner": "holyorder"
+      }
+    ],
+    "Ianamus Zura IV": [
+      {
+        "category": "tradestation",
+        "owner": "teladi"
+      }
+    ],
+    "Jupiter": [
+      {
+        "category": "equipmentdock",
+        "owner": "terran"
+      }
+    ],
+    "Kingdom End I": [
+      {
+        "category": "shipyard",
+        "owner": "boron"
+      },
+      {
+        "category": "wharf",
+        "owner": "boron"
+      },
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Lasting Vengeance": [
+      {
+        "category": "equipmentdock",
+        "owner": "holyorder"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Loomanckstrat's Legacy": [
+      {
+        "category": "piratebase",
+        "owner": "scaleplate"
+      }
+    ],
+    "Mars": [
+      {
+        "category": "wharf",
+        "owner": "terran"
+      },
+      {
+        "category": "tradestation",
+        "owner": "terran"
+      }
+    ],
+    "Matrix #451": [
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Matrix #598": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      }
+    ],
+    "Matrix #79B": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      }
+    ],
+    "Matrix #9": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      }
+    ],
+    "Menelaus' Oasis": [
+      {
+        "category": "equipmentdock",
+        "owner": "boron"
+      },
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Mitsuno's Revelation": [
+      {
+        "category": "tradestation",
+        "owner": "kaori"
+      }
+    ],
+    "Mitsuno's Sacrifice": [
+      {
+        "category": "tradestation",
+        "owner": "kaori"
+      }
+    ],
+    "Neptune": [
+      {
+        "category": "tradestation",
+        "owner": "terran"
+      }
+    ],
+    "Nopileos' Memorial": [
+      {
+        "category": "piratebase",
+        "owner": "scaleplate"
+      }
+    ],
+    "Ocean of Fantasy": [
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Open Market": [
+      {
+        "category": "tradestation",
+        "owner": "teladi"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Ore Belt": [
+      {
+        "category": "piratebase",
+        "owner": "civilian"
+      }
+    ],
+    "Pious Mists II": [
+      {
+        "category": "equipmentdock",
+        "owner": "paranid"
+      },
+      {
+        "category": "tradestation",
+        "owner": "paranid"
+      }
+    ],
+    "Pious Mists IV": [
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "President's End": [
+      {
+        "category": "tradestation",
+        "owner": "argon"
+      }
+    ],
+    "Profit Center Alpha": [
+      {
+        "category": "shipyard",
+        "owner": "teladi"
+      },
+      {
+        "category": "wharf",
+        "owner": "teladi"
+      }
+    ],
+    "Reflected Stars": [
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Rolk's Demise": [
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Sacred Relic": [
+      {
+        "category": "shipyard",
+        "owner": "alliance"
+      }
+    ],
+    "Sanctum Verge": [
+      {
+        "category": "piratebase",
+        "owner": "civilian"
+      }
+    ],
+    "Saturn Alpha": [
+      {
+        "category": "tradestation",
+        "owner": "terran"
+      }
+    ],
+    "Savage Spur I": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "yaki"
+      }
+    ],
+    "Scale Plate Green I": [
+      {
+        "category": "shipyard",
+        "owner": "xenon"
+      },
+      {
+        "category": "wharf",
+        "owner": "xenon"
+      }
+    ],
+    "Second Contact VII": [
+      {
+        "category": "tradestation",
+        "owner": "antigone"
+      },
+      {
+        "category": "freeport",
+        "owner": "hatikvah"
+      }
+    ],
+    "Second Contact XI": [
+      {
+        "category": "equipmentdock",
+        "owner": "antigone"
+      }
+    ],
+    "Segaris": [
+      {
+        "category": "equipmentdock",
+        "owner": "pioneers"
+      },
+      {
+        "category": "tradestation",
+        "owner": "pioneers"
+      }
+    ],
+    "Silent Witness I": [
+      {
+        "category": "tradestation",
+        "owner": "argon"
+      }
+    ],
+    "Silent Witness XI": [
+      {
+        "category": "freeport",
+        "owner": "hatikvah"
+      }
+    ],
+    "Silent Witness XII": [
+      {
+        "category": "piratebase",
+        "owner": "scaleplate"
+      },
+      {
+        "category": "khaak_hive",
+        "owner": "khaak"
+      }
+    ],
+    "Tharka's Ravine VIII": [
+      {
+        "category": "equipmentdock",
+        "owner": "freesplit"
+      }
+    ],
+    "Tharka's Ravine XVI": [
+      {
+        "category": "tradestation",
+        "owner": "freesplit"
+      }
+    ],
+    "The Moon": [
+      {
+        "category": "shipyard",
+        "owner": "terran"
+      },
+      {
+        "category": "tradestation",
+        "owner": "terran"
+      }
+    ],
+    "The Void": [
+      {
+        "category": "tradestation",
+        "owner": "antigone"
+      }
+    ],
+    "Towering Wave": [
+      {
+        "category": "tradestation",
+        "owner": "boron"
+      }
+    ],
+    "Trinity Sanctum III": [
+      {
+        "category": "shipyard",
+        "owner": "paranid"
+      },
+      {
+        "category": "wharf",
+        "owner": "paranid"
+      }
+    ],
+    "Trinity Sanctum VII": [
+      {
+        "category": "wharf",
+        "owner": "alliance"
+      }
+    ],
+    "Void of Opportunity": [
+      {
+        "category": "piratebase",
+        "owner": "civilian"
+      }
+    ],
+    "Windfall I Union Summit": [
+      {
+        "category": "shipyard",
+        "owner": "loanshark"
+      },
+      {
+        "category": "wharf",
+        "owner": "loanshark"
+      }
+    ],
+    "Windfall III The Hoard": [
+      {
+        "category": "tradestation",
+        "owner": "loanshark"
+      }
+    ],
+    "Wretched Skies V Family Phi": [
+      {
+        "category": "wharf",
+        "owner": "split"
+      }
+    ],
+    "Wretched Skies X": [
+      {
+        "category": "wharf",
+        "owner": "paranid"
+      }
+    ],
+    "Zyarth's Dominion I": [
+      {
+        "category": "equipmentdock",
+        "owner": "split"
+      }
+    ],
+    "Zyarth's Dominion IV": [
+      {
+        "category": "shipyard",
+        "owner": "split"
+      },
+      {
+        "category": "wharf",
+        "owner": "split"
+      }
+    ],
+    "Zyarth's Dominion X": [
+      {
+        "category": "tradestation",
+        "owner": "split"
+      }
+    ]
+  }
+}

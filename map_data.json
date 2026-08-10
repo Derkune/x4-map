@@ -1,0 +1,3471 @@
+{
+  "hexSize": 10000000,
+  "dlcPacks": [
+    {
+      "code": "0",
+      "id": "base",
+      "label": "Base Game",
+      "color": "#d0d4d8"
+    },
+    {
+      "code": "S",
+      "id": "ego_dlc_split",
+      "label": "Split Vendetta",
+      "color": "#ff7f0e"
+    },
+    {
+      "code": "T",
+      "id": "ego_dlc_terran",
+      "label": "Cradle of Humanity",
+      "color": "#1f77b4"
+    },
+    {
+      "code": "P",
+      "id": "ego_dlc_pirate",
+      "label": "Tides of Avarice",
+      "color": "#8B4513"
+    },
+    {
+      "code": "B",
+      "id": "ego_dlc_boron",
+      "label": "Kingdom End",
+      "color": "#2ca02c"
+    },
+    {
+      "code": "L",
+      "id": "ego_dlc_timelines",
+      "label": "Timelines",
+      "color": "#ffb6c1"
+    },
+    {
+      "code": "H",
+      "id": "ego_dlc_mini_01",
+      "label": "Hyperion Pack",
+      "color": "#9467bd"
+    },
+    {
+      "code": "E",
+      "id": "ego_dlc_mini_02",
+      "label": "Envoy Pack",
+      "color": "#808000"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "01",
+      "macro": "Cluster_01_macro",
+      "x": 0.0,
+      "z": 0.0,
+      "q": 0,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_01_Sector001_macro",
+          "name": "Grand Exchange I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_01_Sector002_macro",
+          "name": "Grand Exchange III",
+          "dlc": null,
+          "x": -21113958.0,
+          "z": 7381814.5
+        },
+        {
+          "macro": "Cluster_01_Sector003_macro",
+          "name": "Grand Exchange IV",
+          "dlc": null,
+          "x": 38620000.0,
+          "z": 53635320.0
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "macro": "Cluster_02_macro",
+      "x": 15000000.0,
+      "z": 25980000.0,
+      "q": 1,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_02_Sector001_macro",
+          "name": "Eighteen Billion",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "macro": "Cluster_03_macro",
+      "x": 30000000.0,
+      "z": 17320000.0,
+      "q": 2,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_03_Sector001_macro",
+          "name": "Memory of Profit IX",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "macro": "Cluster_04_macro",
+      "x": 45000000.0,
+      "z": -25980000.0,
+      "q": 3,
+      "r": -3,
+      "sectors": [
+        {
+          "macro": "Cluster_04_Sector001_macro",
+          "name": "Nopileos' Fortune II",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_04_Sector002_macro",
+          "name": "Nopileos' Fortune VI",
+          "dlc": null,
+          "x": 1046580.8125,
+          "z": -20353148.0
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "macro": "Cluster_05_macro",
+      "x": 0.0,
+      "z": -17320000.0,
+      "q": 0,
+      "r": -1,
+      "sectors": [
+        {
+          "macro": "Cluster_05_Sector001_macro",
+          "name": "Path to Profit",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "macro": "Cluster_06_macro",
+      "x": -30000000.0,
+      "z": 0.0,
+      "q": -2,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_06_Sector001_macro",
+          "name": "Black Hole Sun IV",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_06_Sector002_macro",
+          "name": "Black Hole Sun V",
+          "dlc": null,
+          "x": 47759560.0,
+          "z": -5868100.5
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "macro": "Cluster_07_macro",
+      "x": -105000000.0,
+      "z": 43300000.0,
+      "q": -7,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_07_Sector001_macro",
+          "name": "The Reach",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "macro": "Cluster_08_macro",
+      "x": -15000000.0,
+      "z": 95260000.0,
+      "q": -1,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_08_Sector001_macro",
+          "name": "Silent Witness I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "macro": "Cluster_09_macro",
+      "x": 60000000.0,
+      "z": 69280000.0,
+      "q": 4,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_09_Sector001_macro",
+          "name": "Bright Promise",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "macro": "Cluster_10_macro",
+      "x": 75000000.0,
+      "z": -8660000.0,
+      "q": 5,
+      "r": -3,
+      "sectors": [
+        {
+          "macro": "Cluster_10_Sector001_macro",
+          "name": "Unholy Retribution",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "macro": "Cluster_11_macro",
+      "x": -30000000.0,
+      "z": -69280000.0,
+      "q": -2,
+      "r": -3,
+      "sectors": [
+        {
+          "macro": "Cluster_11_Sector001_macro",
+          "name": "Pontifex's Claim",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "macro": "Cluster_12_macro",
+      "x": -60000000.0,
+      "z": -51960000.0,
+      "q": -4,
+      "r": -1,
+      "sectors": [
+        {
+          "macro": "Cluster_12_Sector001_macro",
+          "name": "True Sight",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "macro": "Cluster_13_macro",
+      "x": -75000000.0,
+      "z": -8660000.0,
+      "q": -5,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_13_Sector001_macro",
+          "name": "Second Contact II Flashpoint",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "macro": "Cluster_14_macro",
+      "x": -90000000.0,
+      "z": 34640000.0,
+      "q": -6,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_14_Sector001_macro",
+          "name": "Argon Prime",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "macro": "Cluster_15_macro",
+      "x": 90000000.0,
+      "z": 69280000.0,
+      "q": 6,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_15_Sector001_macro",
+          "name": "Ianamus Zura IV",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_15_Sector002_macro",
+          "name": "Ianamus Zura VII",
+          "dlc": null,
+          "x": 109979864.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "macro": "Cluster_16_macro",
+      "x": 90000000.0,
+      "z": 86600000.0,
+      "q": 6,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_16_Sector001_macro",
+          "name": "Matrix #451",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "macro": "Cluster_17_macro",
+      "x": 75000000.0,
+      "z": 95260000.0,
+      "q": 5,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_17_Sector001_macro",
+          "name": "Matrix #9",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "macro": "Cluster_18_macro",
+      "x": 75000000.0,
+      "z": 25980000.0,
+      "q": 5,
+      "r": -1,
+      "sectors": [
+        {
+          "macro": "Cluster_18_Sector001_macro",
+          "name": "Trinity Sanctum III",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "macro": "Cluster_19_macro",
+      "x": 105000000.0,
+      "z": -8660000.0,
+      "q": 7,
+      "r": -4,
+      "sectors": [
+        {
+          "macro": "Cluster_19_Sector001_macro",
+          "name": "Hewa's Twin I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_19_Sector002_macro",
+          "name": "Hewa's Twin II",
+          "dlc": null,
+          "x": 112672928.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "macro": "Cluster_20_macro",
+      "x": 135000000.0,
+      "z": -25980000.0,
+      "q": 9,
+      "r": -6,
+      "sectors": [
+        {
+          "macro": "Cluster_20_Sector001_macro",
+          "name": "Company Regard",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "macro": "Cluster_21_macro",
+      "x": 135000000.0,
+      "z": -43300000.0,
+      "q": 9,
+      "r": -7,
+      "sectors": [
+        {
+          "macro": "Cluster_21_Sector001_macro",
+          "name": "Scale Plate Green I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_21_Sector002_macro",
+          "name": "Scale Plate Green VII",
+          "dlc": null,
+          "x": -186899.40625,
+          "z": 46710032.0
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "macro": "Cluster_22_macro",
+      "x": 30000000.0,
+      "z": -51960000.0,
+      "q": 2,
+      "r": -4,
+      "sectors": [
+        {
+          "macro": "Cluster_22_Sector001_macro",
+          "name": "Pious Mists II",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "macro": "Cluster_23_macro",
+      "x": 60000000.0,
+      "z": -86600000.0,
+      "q": 4,
+      "r": -7,
+      "sectors": [
+        {
+          "macro": "Cluster_23_Sector001_macro",
+          "name": "Sacred Relic",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "macro": "Cluster_24_macro",
+      "x": -45000000.0,
+      "z": -60620000.0,
+      "q": -3,
+      "r": -2,
+      "sectors": [
+        {
+          "macro": "Cluster_24_Sector001_macro",
+          "name": "Holy Vision",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "macro": "Cluster_25_macro",
+      "x": -90000000.0,
+      "z": -69280000.0,
+      "q": -6,
+      "r": -1,
+      "sectors": [
+        {
+          "macro": "Cluster_25_Sector001_macro",
+          "name": "Faulty Logic I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_25_Sector002_macro",
+          "name": "Faulty Logic VII",
+          "dlc": null,
+          "x": 0.0,
+          "z": -37855016.0
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "macro": "Cluster_26_macro",
+      "x": -120000000.0,
+      "z": -51960000.0,
+      "q": -8,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_26_Sector001_macro",
+          "name": "Atiya's Misfortune I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_26_Sector002_macro",
+          "name": "Atiya's Misfortune III",
+          "dlc": null,
+          "x": 26673982.0,
+          "z": -55409964.0
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "macro": "Cluster_27_macro",
+      "x": -150000000.0,
+      "z": 34640000.0,
+      "q": -10,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_27_Sector001_macro",
+          "name": "The Void",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "macro": "Cluster_28_macro",
+      "x": -165000000.0,
+      "z": 25980000.0,
+      "q": -11,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_28_Sector001_macro",
+          "name": "Antigone Memorial",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "macro": "Cluster_29_macro",
+      "x": -60000000.0,
+      "z": 69280000.0,
+      "q": -4,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_29_Sector001_macro",
+          "name": "Hatikvah's Choice I",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_29_Sector002_macro",
+          "name": "Hatikvah's Choice III",
+          "dlc": null,
+          "x": 80377000.0,
+          "z": 27158380.0
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "macro": "Cluster_30_macro",
+      "x": -90000000.0,
+      "z": 69280000.0,
+      "q": -6,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_30_Sector001_macro",
+          "name": "Morning Star III",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "macro": "Cluster_31_macro",
+      "x": -120000000.0,
+      "z": 103920000.0,
+      "q": -8,
+      "r": 10,
+      "sectors": [
+        {
+          "macro": "Cluster_31_Sector001_macro",
+          "name": "Heretic's End",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "macro": "Cluster_32_macro",
+      "x": -60000000.0,
+      "z": 103920000.0,
+      "q": -4,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_32_Sector001_macro",
+          "name": "Tharka's Cascade XV",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_32_Sector002_macro",
+          "name": "Tharka's Cascade XVII",
+          "dlc": null,
+          "x": 0.0,
+          "z": 33149454.0
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "macro": "Cluster_33_macro",
+      "x": -75000000.0,
+      "z": 112580000.0,
+      "q": -5,
+      "r": 9,
+      "sectors": [
+        {
+          "macro": "Cluster_33_Sector001_macro",
+          "name": "Matrix #79B",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "macro": "Cluster_34_macro",
+      "x": 45000000.0,
+      "z": 77940000.0,
+      "q": 3,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_34_Sector001_macro",
+          "name": "Profit Center Alpha",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "macro": "Cluster_35_macro",
+      "x": -45000000.0,
+      "z": -95260000.0,
+      "q": -3,
+      "r": -4,
+      "sectors": [
+        {
+          "macro": "Cluster_35_Sector001_macro",
+          "name": "Lasting Vengeance",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "macro": "Cluster_36_macro",
+      "x": -60000000.0,
+      "z": -86600000.0,
+      "q": -4,
+      "r": -3,
+      "sectors": [
+        {
+          "macro": "Cluster_36_Sector001_macro",
+          "name": "Cardinal's Redress",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "macro": "Cluster_37_macro",
+      "x": 45000000.0,
+      "z": -60620000.0,
+      "q": 3,
+      "r": -5,
+      "sectors": [
+        {
+          "macro": "Cluster_37_Sector001_macro",
+          "name": "Pious Mists IV",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "macro": "Cluster_38_macro",
+      "x": 30000000.0,
+      "z": -69280000.0,
+      "q": 2,
+      "r": -5,
+      "sectors": [
+        {
+          "macro": "Cluster_38_Sector001_macro",
+          "name": "Pious Mists XI",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "macro": "Cluster_39_macro",
+      "x": 30000000.0,
+      "z": 0.0,
+      "q": 2,
+      "r": -1,
+      "sectors": [
+        {
+          "macro": "Cluster_39_Sector001_macro",
+          "name": "Memory of Profit X",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "macro": "Cluster_40_macro",
+      "x": -90000000.0,
+      "z": -17320000.0,
+      "q": -6,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_40_Sector001_macro",
+          "name": "Second Contact VII",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "macro": "Cluster_41_macro",
+      "x": -90000000.0,
+      "z": 0.0,
+      "q": -6,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_41_Sector001_macro",
+          "name": "Second Contact XI",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "macro": "Cluster_42_macro",
+      "x": 120000000.0,
+      "z": 0.0,
+      "q": 8,
+      "r": -4,
+      "sectors": [
+        {
+          "macro": "Cluster_42_Sector001_macro",
+          "name": "Hewa's Twin III",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_42_Sector002_macro",
+          "name": "Hewa's Twin IV The Cove",
+          "dlc": null,
+          "x": 112672928.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "macro": "Cluster_43_macro",
+      "x": 120000000.0,
+      "z": 17320000.0,
+      "q": 8,
+      "r": -3,
+      "sectors": [
+        {
+          "macro": "Cluster_43_Sector001_macro",
+          "name": "Hewa's Twin V",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "macro": "Cluster_44_macro",
+      "x": 0.0,
+      "z": 103920000.0,
+      "q": 0,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_44_Sector001_macro",
+          "name": "Silent Witness XI",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "macro": "Cluster_45_macro",
+      "x": -15000000.0,
+      "z": 112580000.0,
+      "q": -1,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_45_Sector001_macro",
+          "name": "Silent Witness XII",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "macro": "Cluster_46_macro",
+      "x": -90000000.0,
+      "z": 86600000.0,
+      "q": -6,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_46_Sector001_macro",
+          "name": "Morning Star IV",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "macro": "Cluster_47_macro",
+      "x": 60000000.0,
+      "z": 34640000.0,
+      "q": 4,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_47_Sector001_macro",
+          "name": "Trinity Sanctum VII",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "macro": "Cluster_48_macro",
+      "x": -150000000.0,
+      "z": 51960000.0,
+      "q": -10,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_48_Sector001_macro",
+          "name": "Getsu Fune",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "macro": "Cluster_49_macro",
+      "x": -120000000.0,
+      "z": -17320000.0,
+      "q": -8,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_49_Sector001_macro",
+          "name": "Frontier Edge",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "macro": "Cluster_50_macro",
+      "x": 150000000.0,
+      "z": -34640000.0,
+      "q": 10,
+      "r": -7,
+      "sectors": [
+        {
+          "macro": "Cluster_50_Sector001_macro",
+          "name": "Turquoise Sea IX",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_50_Sector002_macro",
+          "name": "Turquoise Sea X",
+          "dlc": null,
+          "x": 26673982.0,
+          "z": -55409964.0
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "macro": "Cluster_100_macro",
+      "x": -195000000.0,
+      "z": 8660000.0,
+      "q": -13,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_100_Sector001_macro",
+          "name": "Asteroid Belt",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "macro": "Cluster_101_macro",
+      "x": -210000000.0,
+      "z": 17320000.0,
+      "q": -14,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_101_Sector001_macro",
+          "name": "Mars",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "macro": "Cluster_102_macro",
+      "x": -225000000.0,
+      "z": 25980000.0,
+      "q": -15,
+      "r": 9,
+      "sectors": [
+        {
+          "macro": "Cluster_102_Sector001_macro",
+          "name": "Venus",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "104",
+      "macro": "Cluster_104_macro",
+      "x": -210000000.0,
+      "z": 34640000.0,
+      "q": -14,
+      "r": 9,
+      "sectors": [
+        {
+          "macro": "Cluster_104_Sector001_macro",
+          "name": "Earth",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_104_Sector002_macro",
+          "name": "The Moon",
+          "dlc": "T",
+          "x": 0.0,
+          "z": -175890496.0
+        }
+      ]
+    },
+    {
+      "id": "106",
+      "macro": "Cluster_106_macro",
+      "x": -225000000.0,
+      "z": 43300000.0,
+      "q": -15,
+      "r": 10,
+      "sectors": [
+        {
+          "macro": "Cluster_106_Sector001_macro",
+          "name": "Mercury",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "107",
+      "macro": "Cluster_107_macro",
+      "x": -210000000.0,
+      "z": -17320000.0,
+      "q": -14,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_107_Sector001_macro",
+          "name": "Jupiter",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "108",
+      "macro": "Cluster_108_macro",
+      "x": -225000000.0,
+      "z": -25980000.0,
+      "q": -15,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_108_Sector001_macro",
+          "name": "Saturn Alpha",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_108_Sector002_macro",
+          "name": "Titan",
+          "dlc": "T",
+          "x": -55073532.0,
+          "z": -159401120.0
+        },
+        {
+          "macro": "Cluster_108_Sector003_macro",
+          "name": "Saturn Beta",
+          "dlc": "T",
+          "x": -32631400.0,
+          "z": 134273000.0
+        }
+      ]
+    },
+    {
+      "id": "109",
+      "macro": "Cluster_109_macro",
+      "x": -240000000.0,
+      "z": -34640000.0,
+      "q": -16,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_109_Sector001_macro",
+          "name": "Uranus",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "macro": "Cluster_110_macro",
+      "x": -225000000.0,
+      "z": -43300000.0,
+      "q": -15,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_110_Sector001_macro",
+          "name": "Neptune",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "111",
+      "macro": "Cluster_111_macro",
+      "x": -240000000.0,
+      "z": -51960000.0,
+      "q": -16,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_111_Sector001_macro",
+          "name": "Pluto",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "112",
+      "macro": "Cluster_112_macro",
+      "x": -120000000.0,
+      "z": 69280000.0,
+      "q": -8,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_112_Sector001_macro",
+          "name": "Savage Spur I",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_112_Sector002_macro",
+          "name": "Savage Spur II",
+          "dlc": "T",
+          "x": 0.0,
+          "z": -51054804.0
+        }
+      ]
+    },
+    {
+      "id": "113",
+      "macro": "Cluster_113_macro",
+      "x": -165000000.0,
+      "z": -77940000.0,
+      "q": -11,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_113_Sector001_macro",
+          "name": "Segaris",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "114",
+      "macro": "Cluster_114_macro",
+      "x": -180000000.0,
+      "z": -86600000.0,
+      "q": -12,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_114_Sector001_macro",
+          "name": "Gaian Prophecy",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "115",
+      "macro": "Cluster_115_macro",
+      "x": -195000000.0,
+      "z": -77940000.0,
+      "q": -13,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_115_Sector001_macro",
+          "name": "Brennan's Triumph",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "116",
+      "macro": "Cluster_116_macro",
+      "x": -255000000.0,
+      "z": -60620000.0,
+      "q": -17,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_116_Sector001_macro",
+          "name": "Oort Cloud",
+          "dlc": "T",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "400",
+      "macro": "Cluster_400_macro",
+      "x": -105000000.0,
+      "z": 147220000.0,
+      "q": -7,
+      "r": 12,
+      "sectors": [
+        {
+          "macro": "Cluster_400_Sector001_macro",
+          "name": "Wretched Skies IV Family Valka",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "401",
+      "macro": "Cluster_401_macro",
+      "x": -45000000.0,
+      "z": 129900000.0,
+      "q": -3,
+      "r": 9,
+      "sectors": [
+        {
+          "macro": "Cluster_401_Sector001_macro",
+          "name": "Family Zhin",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "402",
+      "macro": "Cluster_402_macro",
+      "x": -45000000.0,
+      "z": 147220000.0,
+      "q": -3,
+      "r": 10,
+      "sectors": [
+        {
+          "macro": "Cluster_402_Sector001_macro",
+          "name": "Family Kritt",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "403",
+      "macro": "Cluster_403_macro",
+      "x": -120000000.0,
+      "z": 138560000.0,
+      "q": -8,
+      "r": 12,
+      "sectors": [
+        {
+          "macro": "Cluster_403_Sector001_macro",
+          "name": "Wretched Skies V Family Phi",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "404",
+      "macro": "Cluster_404_macro",
+      "x": 30000000.0,
+      "z": 155880000.0,
+      "q": 2,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_404_Sector001_macro",
+          "name": "Zyarth's Dominion I",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "405",
+      "macro": "Cluster_405_macro",
+      "x": 45000000.0,
+      "z": 147220000.0,
+      "q": 3,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_405_Sector001_macro",
+          "name": "Zyarth's Dominion IV",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "406",
+      "macro": "Cluster_406_macro",
+      "x": 45000000.0,
+      "z": 164540000.0,
+      "q": 3,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_406_Sector001_macro",
+          "name": "Zyarth's Dominion X",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "407",
+      "macro": "Cluster_407_macro",
+      "x": 120000000.0,
+      "z": 103920000.0,
+      "q": 8,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_407_Sector001_macro",
+          "name": "Family Tkr",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "408",
+      "macro": "Cluster_408_macro",
+      "x": 120000000.0,
+      "z": 86600000.0,
+      "q": 8,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_408_Sector001_macro",
+          "name": "Thuruk's Demise III",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_408_Sector002_macro",
+          "name": "Thuruk's Demise II First Impact",
+          "dlc": "S",
+          "x": -18203762.0,
+          "z": 14011029.0
+        }
+      ]
+    },
+    {
+      "id": "409",
+      "macro": "Cluster_409_macro",
+      "x": 150000000.0,
+      "z": 103920000.0,
+      "q": 10,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_409_Sector001_macro",
+          "name": "Tharka's Ravine XXIV",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "410",
+      "macro": "Cluster_410_macro",
+      "x": 165000000.0,
+      "z": 112580000.0,
+      "q": 11,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_410_Sector001_macro",
+          "name": "Tharka's Ravine XVI",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "411",
+      "macro": "Cluster_411_macro",
+      "x": 180000000.0,
+      "z": 138560000.0,
+      "q": 12,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_411_Sector001_macro",
+          "name": "Heart of Acrimony II",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "412",
+      "macro": "Cluster_412_macro",
+      "x": 180000000.0,
+      "z": 103920000.0,
+      "q": 12,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_412_Sector001_macro",
+          "name": "Tharka's Ravine VIII",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "413",
+      "macro": "Cluster_413_macro",
+      "x": 195000000.0,
+      "z": 112580000.0,
+      "q": 13,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_413_Sector001_macro",
+          "name": "Tharka's Ravine IV Tharka's Fall",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "414",
+      "macro": "Cluster_414_macro",
+      "x": -45000000.0,
+      "z": 164540000.0,
+      "q": -3,
+      "r": 11,
+      "sectors": [
+        {
+          "macro": "Cluster_414_Sector001_macro",
+          "name": "Rhy's Defiance",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "415",
+      "macro": "Cluster_415_macro",
+      "x": -30000000.0,
+      "z": 173200000.0,
+      "q": -2,
+      "r": 11,
+      "sectors": [
+        {
+          "macro": "Cluster_415_Sector001_macro",
+          "name": "Matrix #598",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "416",
+      "macro": "Cluster_416_macro",
+      "x": 90000000.0,
+      "z": 138560000.0,
+      "q": 6,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_416_Sector001_macro",
+          "name": "Guiding Star V",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_416_Sector002_macro",
+          "name": "Guiding Star VII",
+          "dlc": "S",
+          "x": -9526876.0,
+          "z": 24569310.0
+        }
+      ]
+    },
+    {
+      "id": "417",
+      "macro": "Cluster_417_macro",
+      "x": 75000000.0,
+      "z": 164540000.0,
+      "q": 5,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_417_Sector001_macro",
+          "name": "Eleventh Hour",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "418",
+      "macro": "Cluster_418_macro",
+      "x": 0.0,
+      "z": 138560000.0,
+      "q": 0,
+      "r": 8,
+      "sectors": [
+        {
+          "macro": "Cluster_418_Sector001_macro",
+          "name": "Family Nhuut",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "419",
+      "macro": "Cluster_419_macro",
+      "x": 30000000.0,
+      "z": 121240000.0,
+      "q": 2,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_419_Sector001_macro",
+          "name": "Open Market",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "420",
+      "macro": "Cluster_420_macro",
+      "x": 45000000.0,
+      "z": 112580000.0,
+      "q": 3,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_420_Sector001_macro",
+          "name": "Two Grand",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "421",
+      "macro": "Cluster_421_macro",
+      "x": 120000000.0,
+      "z": 121240000.0,
+      "q": 8,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_421_Sector001_macro",
+          "name": "Fires of Defeat",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "422",
+      "macro": "Cluster_422_macro",
+      "x": -135000000.0,
+      "z": 147220000.0,
+      "q": -9,
+      "r": 13,
+      "sectors": [
+        {
+          "macro": "Cluster_422_Sector001_macro",
+          "name": "Wretched Skies X",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "423",
+      "macro": "Cluster_423_macro",
+      "x": -165000000.0,
+      "z": 147220000.0,
+      "q": -11,
+      "r": 14,
+      "sectors": [
+        {
+          "macro": "Cluster_423_Sector001_macro",
+          "name": "Litany of Fury IX",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_423_Sector002_macro",
+          "name": "Litany of Fury XII",
+          "dlc": "S",
+          "x": 130226256.0,
+          "z": 112144392.0
+        }
+      ]
+    },
+    {
+      "id": "424",
+      "macro": "Cluster_424_macro",
+      "x": -180000000.0,
+      "z": 155880000.0,
+      "q": -12,
+      "r": 15,
+      "sectors": [
+        {
+          "macro": "Cluster_424_Sector001_macro",
+          "name": "Emperor's Pride IV",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_424_Sector002_macro",
+          "name": "Emperor's Pride VI",
+          "dlc": "S",
+          "x": 136719008.0,
+          "z": 3677055.75
+        }
+      ]
+    },
+    {
+      "id": "425",
+      "macro": "Cluster_425_macro",
+      "x": 165000000.0,
+      "z": 147220000.0,
+      "q": 11,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_425_Sector001_macro",
+          "name": "Heart of Acrimony I The Boneyard",
+          "dlc": "S",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "macro": "Cluster_500_macro",
+      "x": -15000000.0,
+      "z": 25980000.0,
+      "q": -1,
+      "r": 2,
+      "sectors": [
+        {
+          "macro": "Cluster_500_Sector001_macro",
+          "name": "Avarice I",
+          "dlc": "P",
+          "x": 35038240.0,
+          "z": 55106290.0
+        },
+        {
+          "macro": "Cluster_500_Sector002_macro",
+          "name": "Avarice V Dead End",
+          "dlc": "P",
+          "x": 986167.6,
+          "z": -210804500.0
+        },
+        {
+          "macro": "Cluster_500_Sector003_macro",
+          "name": "Avarice IV",
+          "dlc": "P",
+          "x": -110379200.0,
+          "z": -45945560.0
+        }
+      ]
+    },
+    {
+      "id": "501",
+      "macro": "Cluster_501_macro",
+      "x": -30000000.0,
+      "z": 51960000.0,
+      "q": -2,
+      "r": 4,
+      "sectors": [
+        {
+          "macro": "Cluster_501_Sector001_macro",
+          "name": "Windfall I Union Summit",
+          "dlc": "P",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "502",
+      "macro": "Cluster_502_macro",
+      "x": -45000000.0,
+      "z": 43300000.0,
+      "q": -3,
+      "r": 4,
+      "sectors": [
+        {
+          "macro": "Cluster_502_Sector001_macro",
+          "name": "Windfall III The Hoard",
+          "dlc": "P",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "503",
+      "macro": "Cluster_503_macro",
+      "x": -45000000.0,
+      "z": 25980000.0,
+      "q": -3,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_503_Sector001_macro",
+          "name": "Windfall IV Aurora's Dream",
+          "dlc": "P",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "504",
+      "macro": "Cluster_504_macro",
+      "x": 180000000.0,
+      "z": 69280000.0,
+      "q": 12,
+      "r": -2,
+      "sectors": [
+        {
+          "macro": "Cluster_504_Sector001_macro",
+          "name": "Unknown System",
+          "dlc": "P",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "601",
+      "macro": "Cluster_601_macro",
+      "x": -150000000.0,
+      "z": 103920000.0,
+      "q": -10,
+      "r": 11,
+      "sectors": [
+        {
+          "macro": "Cluster_601_Sector001_macro",
+          "name": "Watchful Gaze",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "602",
+      "macro": "Cluster_602_macro",
+      "x": -165000000.0,
+      "z": 95260000.0,
+      "q": -11,
+      "r": 11,
+      "sectors": [
+        {
+          "macro": "Cluster_602_Sector001_macro",
+          "name": "Barren Shores",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "603",
+      "macro": "Cluster_603_macro",
+      "x": -180000000.0,
+      "z": 86600000.0,
+      "q": -12,
+      "r": 11,
+      "sectors": [
+        {
+          "macro": "Cluster_603_Sector001_macro",
+          "name": "Great Reef",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "604",
+      "macro": "Cluster_604_macro",
+      "x": -180000000.0,
+      "z": 69280000.0,
+      "q": -12,
+      "r": 10,
+      "sectors": [
+        {
+          "macro": "Cluster_604_Sector001_macro",
+          "name": "Ocean of Fantasy",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "605",
+      "macro": "Cluster_605_macro",
+      "x": -195000000.0,
+      "z": 112580000.0,
+      "q": -13,
+      "r": 13,
+      "sectors": [
+        {
+          "macro": "Cluster_605_Sector001_macro",
+          "name": "Sanctuary of Darkness",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "606",
+      "macro": "Cluster_606_macro",
+      "x": -225000000.0,
+      "z": 129900000.0,
+      "q": -15,
+      "r": 15,
+      "sectors": [
+        {
+          "macro": "Cluster_606_Sector001_macro",
+          "name": "Kingdom End I",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        },
+        {
+          "macro": "Cluster_606_Sector002_macro",
+          "name": "Reflected Stars",
+          "dlc": "B",
+          "x": -622191.4,
+          "z": -41743070.0
+        },
+        {
+          "macro": "Cluster_606_Sector003_macro",
+          "name": "Towering Wave",
+          "dlc": "B",
+          "x": 59111760.0,
+          "z": -2041270.0
+        }
+      ]
+    },
+    {
+      "id": "607",
+      "macro": "Cluster_607_macro",
+      "x": -240000000.0,
+      "z": 121240000.0,
+      "q": -16,
+      "r": 15,
+      "sectors": [
+        {
+          "macro": "Cluster_607_Sector001_macro",
+          "name": "Rolk's Demise",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "608",
+      "macro": "Cluster_608_macro",
+      "x": -225000000.0,
+      "z": 112580000.0,
+      "q": -15,
+      "r": 14,
+      "sectors": [
+        {
+          "macro": "Cluster_608_Sector001_macro",
+          "name": "Atreus' Clouds",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "609",
+      "macro": "Cluster_609_macro",
+      "x": -240000000.0,
+      "z": 103920000.0,
+      "q": -16,
+      "r": 14,
+      "sectors": [
+        {
+          "macro": "Cluster_609_Sector001_macro",
+          "name": "Menelaus' Oasis",
+          "dlc": "B",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "701",
+      "macro": "Cluster_701_macro",
+      "x": 150000000.0,
+      "z": 17320000.0,
+      "q": 10,
+      "r": -4,
+      "sectors": [
+        {
+          "macro": "Cluster_701_Sector001_macro",
+          "name": "Mitsuno's Revelation",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "702",
+      "macro": "Cluster_702_macro",
+      "x": 165000000.0,
+      "z": 8660000.0,
+      "q": 11,
+      "r": -5,
+      "sectors": [
+        {
+          "macro": "Cluster_702_Sector001_macro",
+          "name": "Mitsuno's Defiance",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "703",
+      "macro": "Cluster_703_macro",
+      "x": 165000000.0,
+      "z": -8660000.0,
+      "q": 11,
+      "r": -6,
+      "sectors": [
+        {
+          "macro": "Cluster_703_Sector001_macro",
+          "name": "Mitsuno's Sacrifice",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "704",
+      "macro": "Cluster_704_macro",
+      "x": 15000000.0,
+      "z": 60620000.0,
+      "q": 1,
+      "r": 3,
+      "sectors": [
+        {
+          "macro": "Cluster_704_Sector001_macro",
+          "name": "President's End",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "705",
+      "macro": "Cluster_705_macro",
+      "x": -120000000.0,
+      "z": 34640000.0,
+      "q": -8,
+      "r": 6,
+      "sectors": [
+        {
+          "macro": "Cluster_705_Sector001_macro",
+          "name": "Nopileos' Memorial",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "706",
+      "macro": "Cluster_706_macro",
+      "x": -105000000.0,
+      "z": 25980000.0,
+      "q": -7,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_706_Sector001_macro",
+          "name": "Hatikvah's Faith",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "708",
+      "macro": "Cluster_708_macro",
+      "x": -45000000.0,
+      "z": 95260000.0,
+      "q": -3,
+      "r": 7,
+      "sectors": [
+        {
+          "macro": "Cluster_708_Sector001_macro",
+          "name": "Matrix #101",
+          "dlc": "L",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "709",
+      "macro": "Cluster_709_macro",
+      "x": 60000000.0,
+      "z": -103920000.0,
+      "q": 4,
+      "r": -8,
+      "sectors": [
+        {
+          "macro": "Cluster_709_Sector001_macro",
+          "name": "Cardinal's Domain",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "710",
+      "macro": "Cluster_710_macro",
+      "x": 105000000.0,
+      "z": -95260000.0,
+      "q": 7,
+      "r": -9,
+      "sectors": [
+        {
+          "macro": "Cluster_710_Sector001_macro",
+          "name": "Moo-Kye's Revenge",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "711",
+      "macro": "Cluster_711_macro",
+      "x": 120000000.0,
+      "z": -69280000.0,
+      "q": 8,
+      "r": -8,
+      "sectors": [
+        {
+          "macro": "Cluster_711_Sector001_macro",
+          "name": "Mi Ton's Refuge",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "712",
+      "macro": "Cluster_712_macro",
+      "x": 105000000.0,
+      "z": -60620000.0,
+      "q": 7,
+      "r": -7,
+      "sectors": [
+        {
+          "macro": "Cluster_712_Sector001_macro",
+          "name": "Loomanckstrat's Legacy",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "713",
+      "macro": "Cluster_713_macro",
+      "x": 90000000.0,
+      "z": -34640000.0,
+      "q": 6,
+      "r": -5,
+      "sectors": [
+        {
+          "macro": "Cluster_713_Sector001_macro",
+          "name": "CEO's Doubt",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "714",
+      "macro": "Cluster_714_macro",
+      "x": -60000000.0,
+      "z": -103920000.0,
+      "q": -4,
+      "r": -4,
+      "sectors": [
+        {
+          "macro": "Cluster_714_Sector001_macro",
+          "name": "Freedom's Reach",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "715",
+      "macro": "Cluster_715_macro",
+      "x": -120000000.0,
+      "z": -69280000.0,
+      "q": -8,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_715_Sector001_macro",
+          "name": "Mists of Artemis",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "720",
+      "macro": "Cluster_720_macro",
+      "x": -150000000.0,
+      "z": -17320000.0,
+      "q": -10,
+      "r": 4,
+      "sectors": [
+        {
+          "macro": "Cluster_720_Sector001_macro",
+          "name": "Ore Belt",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "721",
+      "macro": "Cluster_721_macro",
+      "x": -210000000.0,
+      "z": 69280000.0,
+      "q": -14,
+      "r": 11,
+      "sectors": [
+        {
+          "macro": "Cluster_721_Sector001_macro",
+          "name": "Adventure's Promise",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "722",
+      "macro": "Cluster_722_macro",
+      "x": -135000000.0,
+      "z": -95260000.0,
+      "q": -9,
+      "r": -1,
+      "sectors": [
+        {
+          "macro": "Cluster_722_Sector001_macro",
+          "name": "Sanctum Verge",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "723",
+      "macro": "Cluster_723_macro",
+      "x": -30000000.0,
+      "z": -121240000.0,
+      "q": -2,
+      "r": -6,
+      "sectors": [
+        {
+          "macro": "Cluster_723_Sector001_macro",
+          "name": "Tempting Fumes",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "724",
+      "macro": "Cluster_724_macro",
+      "x": -210000000.0,
+      "z": -103920000.0,
+      "q": -14,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_724_Sector001_macro",
+          "name": "Circle of Deceit",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "725",
+      "macro": "Cluster_725_macro",
+      "x": -30000000.0,
+      "z": -17320000.0,
+      "q": -2,
+      "r": 0,
+      "sectors": [
+        {
+          "macro": "Cluster_725_Sector001_macro",
+          "name": "Void of Opportunity",
+          "dlc": null,
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "730",
+      "macro": "Cluster_730_macro",
+      "x": -150000000.0,
+      "z": 0.0,
+      "q": -10,
+      "r": 5,
+      "sectors": [
+        {
+          "macro": "Cluster_730_Sector001_macro",
+          "name": "Third Redemption",
+          "dlc": "H",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    },
+    {
+      "id": "740",
+      "macro": "Cluster_740_macro",
+      "x": -45000000.0,
+      "z": -8660000.0,
+      "q": -3,
+      "r": 1,
+      "sectors": [
+        {
+          "macro": "Cluster_740_Sector001_macro",
+          "name": "Scarlet Star",
+          "dlc": "E",
+          "x": 0.0,
+          "z": 0.0
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "a": "Asteroid Belt",
+      "b": "Jupiter",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Asteroid Belt",
+      "b": "Mars",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Heart of Acrimony I The Boneyard",
+      "b": "Heart of Acrimony II",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Hewa's Twin I",
+      "b": "Hewa's Twin III",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Hewa's Twin III",
+      "b": "Hewa's Twin V",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Jupiter",
+      "b": "Saturn Alpha",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Mars",
+      "b": "Venus",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Memory of Profit IX",
+      "b": "Memory of Profit X",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Mercury",
+      "b": "Venus",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Mitsuno's Defiance",
+      "b": "Mitsuno's Revelation",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Mitsuno's Defiance",
+      "b": "Mitsuno's Sacrifice",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Morning Star III",
+      "b": "Morning Star IV",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Neptune",
+      "b": "Pluto",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Neptune",
+      "b": "Uranus",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Oort Cloud",
+      "b": "Pluto",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Pious Mists II",
+      "b": "Pious Mists IV",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Pious Mists II",
+      "b": "Pious Mists XI",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Pious Mists IV",
+      "b": "Pious Mists XI",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Saturn Alpha",
+      "b": "Uranus",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Second Contact II Flashpoint",
+      "b": "Second Contact VII",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Second Contact VII",
+      "b": "Second Contact XI",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Silent Witness I",
+      "b": "Silent Witness XI",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Silent Witness XI",
+      "b": "Silent Witness XII",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Tharka's Ravine IV Tharka's Fall",
+      "b": "Tharka's Ravine VIII",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Tharka's Ravine VIII",
+      "b": "Tharka's Ravine XVI",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Tharka's Ravine XVI",
+      "b": "Tharka's Ravine XXIV",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "The Moon",
+      "b": "Venus",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Trinity Sanctum III",
+      "b": "Trinity Sanctum VII",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Windfall I Union Summit",
+      "b": "Windfall III The Hoard",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Windfall III The Hoard",
+      "b": "Windfall IV Aurora's Dream",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Wretched Skies IV Family Valka",
+      "b": "Wretched Skies V Family Phi",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Wretched Skies V Family Phi",
+      "b": "Wretched Skies X",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Zyarth's Dominion I",
+      "b": "Zyarth's Dominion X",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Zyarth's Dominion IV",
+      "b": "Zyarth's Dominion X",
+      "type": "accelerator",
+      "oneWay": false
+    },
+    {
+      "a": "Adventure's Promise",
+      "b": "Atreus' Clouds",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Adventure's Promise",
+      "b": "Ore Belt",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Antigone Memorial",
+      "b": "Segaris",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Antigone Memorial",
+      "b": "The Void",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Argon Prime",
+      "b": "Hatikvah's Choice I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Argon Prime",
+      "b": "Hatikvah's Faith",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Argon Prime",
+      "b": "Second Contact II Flashpoint",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Argon Prime",
+      "b": "The Reach",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Asteroid Belt",
+      "b": "Getsu Fune",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Atiya's Misfortune I",
+      "b": "Frontier Edge",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Atiya's Misfortune III",
+      "b": "Faulty Logic VII",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Atiya's Misfortune III",
+      "b": "Mists of Artemis",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Atreus' Clouds",
+      "b": "Menelaus' Oasis",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Atreus' Clouds",
+      "b": "Rolk's Demise",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Avarice IV",
+      "b": "Windfall III The Hoard",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Barren Shores",
+      "b": "Great Reef",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Barren Shores",
+      "b": "Watchful Gaze",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Black Hole Sun IV",
+      "b": "Second Contact II Flashpoint",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Black Hole Sun IV",
+      "b": "Windfall IV Aurora's Dream",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Black Hole Sun V",
+      "b": "Grand Exchange III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Black Hole Sun V",
+      "b": "Void of Opportunity",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Brennan's Triumph",
+      "b": "Circle of Deceit",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Brennan's Triumph",
+      "b": "Gaian Prophecy",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Brennan's Triumph",
+      "b": "Neptune",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Bright Promise",
+      "b": "Ianamus Zura IV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Bright Promise",
+      "b": "Memory of Profit IX",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Bright Promise",
+      "b": "Profit Center Alpha",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Bright Promise",
+      "b": "Trinity Sanctum III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "CEO's Doubt",
+      "b": "Loomanckstrat's Legacy",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "CEO's Doubt",
+      "b": "Memory of Profit X",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Cardinal's Domain",
+      "b": "Moo-Kye's Revenge",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Cardinal's Domain",
+      "b": "Sacred Relic",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Cardinal's Domain",
+      "b": "Tempting Fumes",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Cardinal's Redress",
+      "b": "Freedom's Reach",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Cardinal's Redress",
+      "b": "Holy Vision",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Cardinal's Redress",
+      "b": "Lasting Vengeance",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Circle of Deceit",
+      "b": "Sanctum Verge",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Company Regard",
+      "b": "Hewa's Twin II",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Company Regard",
+      "b": "Scale Plate Green I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Company Regard",
+      "b": "Turquoise Sea X",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Eighteen Billion",
+      "b": "Grand Exchange IV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Eighteen Billion",
+      "b": "Memory of Profit IX",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Eighteen Billion",
+      "b": "Silent Witness I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Eighteen Billion",
+      "b": "Windfall I Union Summit",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Eleventh Hour",
+      "b": "Guiding Star VII",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Eleventh Hour",
+      "b": "Zyarth's Dominion X",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Emperor's Pride IV",
+      "b": "Litany of Fury IX",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Kritt",
+      "b": "Family Zhin",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Kritt",
+      "b": "Rhy's Defiance",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Nhuut",
+      "b": "Family Zhin",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Nhuut",
+      "b": "Open Market",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Nhuut",
+      "b": "Zyarth's Dominion I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Tkr",
+      "b": "Fires of Defeat",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Tkr",
+      "b": "Matrix #451",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Tkr",
+      "b": "Tharka's Ravine XXIV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Tkr",
+      "b": "Thuruk's Demise III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Zhin",
+      "b": "Tharka's Cascade XV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Family Zhin",
+      "b": "Wretched Skies IV Family Valka",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Faulty Logic I",
+      "b": "Holy Vision",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Fires of Defeat",
+      "b": "Matrix #9",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Fires of Defeat",
+      "b": "Tharka's Ravine XXIV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Fires of Defeat",
+      "b": "Two Grand",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Frontier Edge",
+      "b": "Ore Belt",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Frontier Edge",
+      "b": "The Void",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Gaian Prophecy",
+      "b": "Segaris",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Getsu Fune",
+      "b": "Ocean of Fantasy",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Getsu Fune",
+      "b": "Savage Spur II",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Getsu Fune",
+      "b": "The Void",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Grand Exchange I",
+      "b": "Nopileos' Fortune VI",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Grand Exchange I",
+      "b": "Path to Profit",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Great Reef",
+      "b": "Ocean of Fantasy",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Great Reef",
+      "b": "Sanctuary of Darkness",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Guiding Star V",
+      "b": "Two Grand",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Hatikvah's Choice I",
+      "b": "Morning Star III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Hatikvah's Choice I",
+      "b": "Silent Witness I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Hatikvah's Choice I",
+      "b": "Tharka's Cascade XV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Hatikvah's Faith",
+      "b": "Nopileos' Memorial",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Heart of Acrimony II",
+      "b": "Tharka's Ravine XVI",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Heretic's End",
+      "b": "Morning Star III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Heretic's End",
+      "b": "Watchful Gaze",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Heretic's End",
+      "b": "Wretched Skies V Family Phi",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Hewa's Twin I",
+      "b": "Trinity Sanctum III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Holy Vision",
+      "b": "Pontifex's Claim",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Holy Vision",
+      "b": "True Sight",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Holy Vision",
+      "b": "Void of Opportunity",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Ianamus Zura IV",
+      "b": "Matrix #451",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Ianamus Zura IV",
+      "b": "Mitsuno's Revelation",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Ianamus Zura VII",
+      "b": "Thuruk's Demise III",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Litany of Fury IX",
+      "b": "Wretched Skies X",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Loomanckstrat's Legacy",
+      "b": "Mi Ton's Refuge",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Matrix #101",
+      "b": "Tharka's Cascade XV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Matrix #451",
+      "b": "Matrix #9",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Matrix #598",
+      "b": "Rhy's Defiance",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Matrix #598",
+      "b": "Zyarth's Dominion I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Matrix #79B",
+      "b": "Savage Spur I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Matrix #79B",
+      "b": "Tharka's Cascade XVII",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Menelaus' Oasis",
+      "b": "Rolk's Demise",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Mi Ton's Refuge",
+      "b": "Moo-Kye's Revenge",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Nopileos' Fortune VI",
+      "b": "Pious Mists II",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Open Market",
+      "b": "Two Grand",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Open Market",
+      "b": "Zyarth's Dominion IV",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Ore Belt",
+      "b": "Sanctum Verge",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Ore Belt",
+      "b": "Third Redemption",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Path to Profit",
+      "b": "Void of Opportunity",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Pious Mists II",
+      "b": "Pontifex's Claim",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Pious Mists II",
+      "b": "Sacred Relic",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Pious Mists II",
+      "b": "Unholy Retribution",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "President's End",
+      "b": "Silent Witness I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Profit Center Alpha",
+      "b": "Silent Witness I",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Profit Center Alpha",
+      "b": "Two Grand",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Reflected Stars",
+      "b": "Rolk's Demise",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Sanctuary of Darkness",
+      "b": "Towering Wave",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Sanctum Verge",
+      "b": "Tempting Fumes",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Scale Plate Green VII",
+      "b": "Turquoise Sea X",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Scarlet Star",
+      "b": "Void of Opportunity",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Second Contact II Flashpoint",
+      "b": "The Void",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Second Contact II Flashpoint",
+      "b": "True Sight",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Silent Witness I",
+      "b": "Windfall I Union Summit",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Trinity Sanctum III",
+      "b": "Unholy Retribution",
+      "type": "jump_gate",
+      "oneWay": false
+    },
+    {
+      "a": "Unknown System",
+      "b": "Avarice V Dead End",
+      "type": "jump_gate",
+      "oneWay": true
+    },
+    {
+      "a": "Atiya's Misfortune I",
+      "b": "Atiya's Misfortune III",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Avarice I",
+      "b": "Avarice IV",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Avarice I",
+      "b": "Avarice V Dead End",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Black Hole Sun IV",
+      "b": "Black Hole Sun V",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Earth",
+      "b": "The Moon",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Emperor's Pride IV",
+      "b": "Emperor's Pride VI",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Faulty Logic I",
+      "b": "Faulty Logic VII",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Grand Exchange I",
+      "b": "Grand Exchange III",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Grand Exchange I",
+      "b": "Grand Exchange IV",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Grand Exchange III",
+      "b": "Grand Exchange IV",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Guiding Star V",
+      "b": "Guiding Star VII",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Hatikvah's Choice I",
+      "b": "Hatikvah's Choice III",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Hewa's Twin I",
+      "b": "Hewa's Twin II",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Hewa's Twin III",
+      "b": "Hewa's Twin IV The Cove",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Ianamus Zura IV",
+      "b": "Ianamus Zura VII",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Kingdom End I",
+      "b": "Reflected Stars",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Litany of Fury IX",
+      "b": "Litany of Fury XII",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Nopileos' Fortune II",
+      "b": "Nopileos' Fortune VI",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Reflected Stars",
+      "b": "Towering Wave",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Saturn Alpha",
+      "b": "Saturn Beta",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Saturn Alpha",
+      "b": "Titan",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Savage Spur I",
+      "b": "Savage Spur II",
+      "type": "superhighway",
+      "oneWay": true
+    },
+    {
+      "a": "Scale Plate Green I",
+      "b": "Scale Plate Green VII",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Tharka's Cascade XV",
+      "b": "Tharka's Cascade XVII",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Thuruk's Demise II First Impact",
+      "b": "Thuruk's Demise III",
+      "type": "superhighway",
+      "oneWay": false
+    },
+    {
+      "a": "Turquoise Sea IX",
+      "b": "Turquoise Sea X",
+      "type": "superhighway",
+      "oneWay": false
+    }
+  ]
+}
