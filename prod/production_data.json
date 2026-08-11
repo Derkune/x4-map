@@ -1898,6 +1898,9 @@
         "engine_tel_s_travel_01_mk3",
         "engine_tel_xl_allround_01_mk1",
         "engine_tel_xl_travel_01_mk1",
+        "engine_ter_l_allround_02_mk1",
+        "engine_ter_m_virtual_01_mk1",
+        "engine_ter_s_virtual_01_mk1",
         "missile_cluster_heavy_mk1",
         "missile_cluster_light_mk1",
         "missile_disruptor_light_mk1",
@@ -2006,6 +2009,17 @@
         "shield_tel_s_standard_01_mk2",
         "shield_tel_s_standard_01_mk3",
         "shield_tel_xl_standard_01_mk1",
+        "shield_ter_l_standard_02_mk1",
+        "shield_ter_l_standard_02_mk2",
+        "shield_ter_l_standard_02_mk3",
+        "shield_ter_m_standard_04_mk1",
+        "shield_ter_m_standard_04_mk2",
+        "shield_ter_m_standard_04_mk3",
+        "shield_ter_m_virtual_01_mk1",
+        "shield_ter_m_virtual_01_mk2",
+        "shield_ter_m_virtual_01_mk3",
+        "shield_ter_s_virtual_01_mk1",
+        "shield_ter_s_xperimental_01_mk5",
         "ship_arg_xs_police_01_a",
         "ship_gen_s_fightingdrone_01_a",
         "ship_gen_s_lasertower_01_a",
@@ -2153,6 +2167,8 @@
         "turret_tel_m_plasma_02_mk1",
         "turret_tel_m_shotgun_01_mk1",
         "turret_tel_m_shotgun_02_mk1",
+        "turret_ter_m_laser_03_mk1",
+        "turret_ter_m_laser_04_mk1",
         "weapon_arg_l_destroyer_01_mk1",
         "weapon_arg_m_ion_01_mk1",
         "weapon_arg_m_ion_01_mk2",
@@ -2263,7 +2279,11 @@
         "weapon_tel_m_charge_01_mk1",
         "weapon_tel_m_charge_01_mk2",
         "weapon_tel_s_charge_01_mk1",
-        "weapon_tel_s_charge_01_mk2"
+        "weapon_tel_s_charge_01_mk2",
+        "weapon_ter_l_flagship_01_mk1",
+        "weapon_ter_m_laser_02_mk1",
+        "weapon_ter_s_laser_02_mk1",
+        "weapon_ter_s_plasma_01_mk1"
       ],
       "memberNames": [
         "Flares",
@@ -2384,6 +2404,9 @@
         "TEL S Travel Engine Mk3",
         "TEL XL All-round Engine Mk1",
         "TEL XL Travel Engine Mk1",
+        "TER L Frontier Engine Mk1",
+        "TER M Frontier Engine Mk1",
+        "TER S Frontier Engine Mk1",
         "Heavy Cluster Missile Mk1",
         "Light Cluster Missile Mk1",
         "Light Disruptor Missile Mk1",
@@ -2492,6 +2515,17 @@
         "TEL S Shield Generator Mk2",
         "TEL S Shield Generator Mk3",
         "TEL XL Shield Generator Mk1",
+        "TER L Frontier Shield Generator Mk1",
+        "TER L Frontier Shield Generator Mk2",
+        "TER L Frontier Shield Generator Mk3",
+        "TER M Frontier Shield Generator Mk1",
+        "TER M Frontier Shield Generator Mk2",
+        "TER M Frontier Shield Generator Mk3",
+        "TER M Frontier Shield Generator Mk1",
+        "TER M Frontier Shield Generator Mk2",
+        "TER M Frontier Shield Generator Mk3",
+        "TER S Frontier Shield Generator Mk1",
+        "TER S Frontier Shield Generator Mk5",
         "Argon Station Security Vessel",
         "Defence Drone",
         "Laser Tower Mk2",
@@ -2639,6 +2673,8 @@
         "TEL M Plasma Turret Mk1",
         "TEL M Muon Blaster Turret Mk1",
         "TEL M Muon Blaster Turret Mk1",
+        "TER M Electromagnetic Turret Mk1",
+        "TER M Electromagnetic Turret Mk1",
         "ARG Behemoth Main Battery",
         "ARG M Ion Blaster Mk1",
         "ARG M Ion Blaster Mk2",
@@ -2749,7 +2785,11 @@
         "TEL M Muon Disintegrator Mk1",
         "TEL M Muon Disintegrator Mk2",
         "TEL S Muon Disintegrator Mk1",
-        "TEL S Muon Disintegrator Mk2"
+        "TEL S Muon Disintegrator Mk2",
+        "TER Sapporo Launcher Array",
+        "TER M Electromagnetic Cannon Mk1",
+        "TER S Electromagnetic Gun Mk1",
+        "ARG S Gamma HEPT Mk1"
       ]
     },
     {
@@ -2760,7 +2800,6 @@
       "column": "sink",
       "members": [
         "engine_ter_l_allround_01_mk1",
-        "engine_ter_l_allround_02_mk1",
         "engine_ter_l_travel_01_mk1",
         "engine_ter_m_allround_01_mk1",
         "engine_ter_m_allround_01_mk2",
@@ -2771,7 +2810,6 @@
         "engine_ter_m_travel_01_mk1",
         "engine_ter_m_travel_01_mk2",
         "engine_ter_m_travel_01_mk3",
-        "engine_ter_m_virtual_01_mk1",
         "engine_ter_s_allround_01_mk1",
         "engine_ter_s_allround_01_mk2",
         "engine_ter_s_allround_01_mk3",
@@ -2781,32 +2819,20 @@
         "engine_ter_s_travel_01_mk1",
         "engine_ter_s_travel_01_mk2",
         "engine_ter_s_travel_01_mk3",
-        "engine_ter_s_virtual_01_mk1",
         "engine_ter_xl_allround_01_mk1",
         "engine_ter_xl_travel_01_mk1",
         "shield_ter_l_standard_01_mk1",
         "shield_ter_l_standard_01_mk2",
         "shield_ter_l_standard_01_mk3",
-        "shield_ter_l_standard_02_mk1",
-        "shield_ter_l_standard_02_mk2",
-        "shield_ter_l_standard_02_mk3",
         "shield_ter_m_standard_01_mk1",
         "shield_ter_m_standard_01_mk2",
         "shield_ter_m_standard_01_mk3",
         "shield_ter_m_standard_02_mk1",
         "shield_ter_m_standard_02_mk2",
         "shield_ter_m_standard_02_mk3",
-        "shield_ter_m_standard_04_mk1",
-        "shield_ter_m_standard_04_mk2",
-        "shield_ter_m_standard_04_mk3",
-        "shield_ter_m_virtual_01_mk1",
-        "shield_ter_m_virtual_01_mk2",
-        "shield_ter_m_virtual_01_mk3",
         "shield_ter_s_standard_01_mk1",
         "shield_ter_s_standard_01_mk2",
         "shield_ter_s_standard_01_mk3",
-        "shield_ter_s_virtual_01_mk1",
-        "shield_ter_s_xperimental_01_mk5",
         "shield_ter_xl_standard_01_mk1",
         "shield_ter_xl_standard_01_mk2",
         "ship_ter_xs_police_01_a",
@@ -2826,32 +2852,25 @@
         "turret_ter_m_guided_02_mk1",
         "turret_ter_m_laser_01_mk1",
         "turret_ter_m_laser_02_mk1",
-        "turret_ter_m_laser_03_mk1",
-        "turret_ter_m_laser_04_mk1",
         "turret_ter_m_mining_01_mk1",
         "turret_ter_m_mining_02_mk1",
         "weapon_atf_xl_battleship_01_mk1",
         "weapon_ter_l_destroyer_01_mk1",
-        "weapon_ter_l_flagship_01_mk1",
         "weapon_ter_m_beam_01_mk1",
         "weapon_ter_m_beam_01_mk2",
         "weapon_ter_m_gatling_01_mk1",
         "weapon_ter_m_gatling_01_mk2",
         "weapon_ter_m_laser_01_mk1",
         "weapon_ter_m_laser_01_mk2",
-        "weapon_ter_m_laser_02_mk1",
         "weapon_ter_s_beam_01_mk1",
         "weapon_ter_s_beam_01_mk2",
         "weapon_ter_s_gatling_01_mk1",
         "weapon_ter_s_gatling_01_mk2",
         "weapon_ter_s_laser_01_mk1",
-        "weapon_ter_s_laser_01_mk2",
-        "weapon_ter_s_laser_02_mk1",
-        "weapon_ter_s_plasma_01_mk1"
+        "weapon_ter_s_laser_01_mk2"
       ],
       "memberNames": [
         "TER L All-round Engine Mk1",
-        "TER L Frontier Engine Mk1",
         "TER L Travel Engine Mk1",
         "TER M All-round Engine Mk1",
         "TER M All-round Engine Mk2",
@@ -2862,7 +2881,6 @@
         "TER M Travel Engine Mk1",
         "TER M Travel Engine Mk2",
         "TER M Travel Engine Mk3",
-        "TER M Frontier Engine Mk1",
         "TER S All-round Engine Mk1",
         "TER S All-round Engine Mk2",
         "TER S All-round Engine Mk3",
@@ -2872,32 +2890,20 @@
         "TER S Travel Engine Mk1",
         "TER S Travel Engine Mk2",
         "TER S Travel Engine Mk3",
-        "TER S Frontier Engine Mk1",
         "TER XL All-round Engine Mk1",
         "TER XL Travel Engine Mk1",
         "TER L Shield Generator Mk1",
         "TER L Shield Generator Mk2",
         "TER L Shield Generator Mk3",
-        "TER L Frontier Shield Generator Mk1",
-        "TER L Frontier Shield Generator Mk2",
-        "TER L Frontier Shield Generator Mk3",
         "TER M Shield Generator Mk1",
         "TER M Shield Generator Mk2",
         "TER M Shield Generator Mk3",
         "TER M Shield Generator Mk1",
         "TER M Shield Generator Mk2",
         "TER M Shield Generator Mk3",
-        "TER M Frontier Shield Generator Mk1",
-        "TER M Frontier Shield Generator Mk2",
-        "TER M Frontier Shield Generator Mk3",
-        "TER M Frontier Shield Generator Mk1",
-        "TER M Frontier Shield Generator Mk2",
-        "TER M Frontier Shield Generator Mk3",
         "TER S Shield Generator Mk1",
         "TER S Shield Generator Mk2",
         "TER S Shield Generator Mk3",
-        "TER S Frontier Shield Generator Mk1",
-        "TER S Frontier Shield Generator Mk5",
         "TER XL Shield Generator Mk1",
         "TER XL Shield Generator Mk2",
         "Terran Station Security Vessel",
@@ -2917,28 +2923,22 @@
         "TER M Tracking Turret Mk1",
         "TER M Pulse Turret Mk1",
         "TER M Pulse Turret Mk1",
-        "TER M Electromagnetic Turret Mk1",
-        "TER M Electromagnetic Turret Mk1",
         "TER M Mining Turret Mk1",
         "TER M Mining Turret Mk1",
         "ATF XL Main Battery",
         "Terran Main Battery",
-        "TER Sapporo Launcher Array",
         "TER M Meson Stream Mk1",
         "TER M Meson Stream Mk2",
         "TER M Proton Barrage Mk1",
         "TER M Proton Barrage Mk2",
         "TER M Pulse Laser Mk1",
         "TER M Pulse Laser Mk2",
-        "TER M Electromagnetic Cannon Mk1",
         "TER S Meson Stream Mk1",
         "TER S Meson Stream Mk2",
         "TER S Proton Barrage Mk1",
         "TER S Proton Barrage Mk2",
         "TER S Pulse Laser Mk1",
-        "TER S Pulse Laser Mk2",
-        "TER S Electromagnetic Gun Mk1",
-        "ARG S Gamma HEPT Mk1"
+        "TER S Pulse Laser Mk2"
       ]
     },
     {
@@ -3185,10 +3185,6 @@
     },
     {
       "from": "advancedelectronics",
-      "to": "sink_equipment_terran"
-    },
-    {
-      "from": "advancedelectronics",
       "to": "sink_equipment_xenon_player"
     },
     {
@@ -3206,10 +3202,6 @@
     {
       "from": "antimatterconverters",
       "to": "sink_equipment_commonwealth"
-    },
-    {
-      "from": "antimatterconverters",
-      "to": "sink_equipment_terran"
     },
     {
       "from": "antimatterconverters",
@@ -3585,10 +3577,6 @@
     },
     {
       "from": "engineparts__default",
-      "to": "sink_equipment_terran"
-    },
-    {
-      "from": "engineparts__default",
       "to": "sink_equipment_xenon_player"
     },
     {
@@ -3601,19 +3589,11 @@
     },
     {
       "from": "engineparts__teladi",
-      "to": "sink_equipment_terran"
-    },
-    {
-      "from": "engineparts__teladi",
       "to": "sink_equipment_xenon_player"
     },
     {
       "from": "fieldcoils",
       "to": "sink_equipment_commonwealth"
-    },
-    {
-      "from": "fieldcoils",
-      "to": "sink_equipment_terran"
     },
     {
       "from": "fieldcoils",
@@ -4025,10 +4005,6 @@
     },
     {
       "from": "shieldcomponents",
-      "to": "sink_equipment_terran"
-    },
-    {
-      "from": "shieldcomponents",
       "to": "sink_equipment_xenon_player"
     },
     {
@@ -4193,10 +4169,6 @@
     },
     {
       "from": "turretcomponents",
-      "to": "sink_equipment_terran"
-    },
-    {
-      "from": "turretcomponents",
       "to": "sink_equipment_xenon_player"
     },
     {
@@ -4290,10 +4262,6 @@
     {
       "from": "weaponcomponents",
       "to": "sink_equipment_commonwealth"
-    },
-    {
-      "from": "weaponcomponents",
-      "to": "sink_equipment_terran"
     },
     {
       "from": "weaponcomponents",
