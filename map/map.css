@@ -36,8 +36,10 @@ body {
   font-family: var(--font);
 }
 
-body {
+.app {
   display: grid;
+  flex: 1;
+  min-height: 0;
   grid-template-columns: 260px 1fr;
 }
 
@@ -403,7 +405,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  body {
+  .app {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }

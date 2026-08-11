@@ -4,144 +4,151 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>X4 Galaxy Map</title>
-    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="map/map.css" />
   </head>
   <body>
-    <aside class="panel" aria-label="Map filters">
-      <h1>X4 Galaxy Map</h1>
-      <p class="map-version">X4 Foundations 9.00</p>
-      <section class="filter-section">
-        <h2>DLC packs</h2>
-        <div id="dlc-filters" class="dlc-filters"></div>
-      </section>
-      <section class="filter-section">
-        <h2>Resources</h2>
-        <p class="hint">
-          Enable filters to highlight sectors. Increase sunlight threshold for the same effect.
-          Change resource distance to highlight clusters which collectively match selected filters.
-        </p>
-        <div id="resource-filters" class="dlc-filters"></div>
-        <div class="slider-filter">
-          <label for="sunlight-slider">Sunlight</label>
-          <div class="slider-row">
-            <input
-              id="sunlight-slider"
-              type="range"
-              min="0"
-              max="0"
-              value="0"
-              step="1"
-              disabled
-            />
-            <output id="sunlight-value" for="sunlight-slider">—</output>
-          </div>
-        </div>
-        <div class="slider-filter">
-          <label for="resource-distance-slider">Resource distance</label>
-          <div class="slider-row">
-            <input
-              id="resource-distance-slider"
-              type="range"
-              min="0"
-              max="6"
-              value="0"
-              step="1"
-            />
-            <output
-              id="resource-distance-value"
-              for="resource-distance-slider"
-              >0</output
-            >
-          </div>
-        </div>
-      </section>
-      <section class="legend-section">
-        <h2>Stations</h2>
-        <ul class="legend">
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <rect class="shipyard" x="-4.2" y="-3.3" width="8.4" height="6.6" rx="0.6" />
-            </svg>
-            Shipyard
-          </li>
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <polygon class="wharf" points="0,-5.5 4.7,3.8 -4.7,3.8" />
-            </svg>
-            Wharf
-          </li>
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <polygon class="equipmentdock" points="0,-5.5 5.5,0 0,5.5 -5.5,0" />
-            </svg>
-            Equipment dock
-          </li>
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <g class="tradestation">
-                <circle r="4" />
-                <line x1="-2.5" y1="0" x2="2.5" y2="0" />
-                <line x1="0" y1="-2.5" x2="0" y2="2.5" />
-              </g>
-            </svg>
-            Trade station
-          </li>
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <polygon
-                class="freeport"
-                points="0,-5.2 4.5,-2.6 4.5,2.6 0,5.2 -4.5,2.6 -4.5,-2.6"
-              />
-            </svg>
-            Free port
-          </li>
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <g class="piratebase">
-                <line x1="-4" y1="-4" x2="4" y2="4" />
-                <line x1="4" y1="-4" x2="-4" y2="4" />
-              </g>
-            </svg>
-            Pirate base
-          </li>
-          <li>
-            <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
-              <g class="khaak_hive">
-                <polygon points="0,-5.5 1.9,0 0,5.5 -1.9,0" />
-                <polygon points="-5.5,0 0,-1.9 5.5,0 0,1.9" />
-              </g>
-            </svg>
-            Kha'ak hive sector
-          </li>
-        </ul>
-      </section>
-      <section class="legend-section">
-        <h2>Connections</h2>
-        <ul class="legend">
-          <li><span class="swatch jump_gate"></span> Jump gate</li>
-          <li><span class="swatch accelerator"></span> Accelerator</li>
-          <li><span class="swatch superhighway"></span> Superhighway</li>
-        </ul>
-      </section>
-    </aside>
-    <main class="map-stage">
-      <svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Galaxy map"></svg>
-      <aside class="vibe-disclaimer" role="note" aria-label="Disclaimer">
-        <svg class="vibe-disclaimer-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="11" fill="#d06070" />
-          <rect x="11" y="6" width="2" height="9" rx="1" fill="#fff" />
-          <circle cx="12" cy="18" r="1.2" fill="#fff" />
-        </svg>
-        <div class="vibe-disclaimer-text">
-          <p class="vibe-disclaimer-title">Vibe coded alert</p>
-          <p class="vibe-disclaimer-body">
-            The code and contents of this web page were created and transplanted
-            from game data with extensive usage of AI agents. There may be factual
-            errors presented on this page.
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html" aria-current="page">Map</a>
+      <a href="production.html">Production Graph</a>
+    </nav>
+    <div class="app">
+      <aside class="panel" aria-label="Map filters">
+        <h1>X4 Galaxy Map</h1>
+        <p class="map-version">X4 Foundations 9.00</p>
+        <section class="filter-section">
+          <h2>DLC packs</h2>
+          <div id="dlc-filters" class="dlc-filters"></div>
+        </section>
+        <section class="filter-section">
+          <h2>Resources</h2>
+          <p class="hint">
+            Enable filters to highlight sectors. Increase sunlight threshold for the same effect.
+            Change resource distance to highlight clusters which collectively match selected filters.
           </p>
-        </div>
+          <div id="resource-filters" class="dlc-filters"></div>
+          <div class="slider-filter">
+            <label for="sunlight-slider">Sunlight</label>
+            <div class="slider-row">
+              <input
+                id="sunlight-slider"
+                type="range"
+                min="0"
+                max="0"
+                value="0"
+                step="1"
+                disabled
+              />
+              <output id="sunlight-value" for="sunlight-slider">—</output>
+            </div>
+          </div>
+          <div class="slider-filter">
+            <label for="resource-distance-slider">Resource distance</label>
+            <div class="slider-row">
+              <input
+                id="resource-distance-slider"
+                type="range"
+                min="0"
+                max="6"
+                value="0"
+                step="1"
+              />
+              <output
+                id="resource-distance-value"
+                for="resource-distance-slider"
+                >0</output
+              >
+            </div>
+          </div>
+        </section>
+        <section class="legend-section">
+          <h2>Stations</h2>
+          <ul class="legend">
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <rect class="shipyard" x="-4.2" y="-3.3" width="8.4" height="6.6" rx="0.6" />
+              </svg>
+              Shipyard
+            </li>
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <polygon class="wharf" points="0,-5.5 4.7,3.8 -4.7,3.8" />
+              </svg>
+              Wharf
+            </li>
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <polygon class="equipmentdock" points="0,-5.5 5.5,0 0,5.5 -5.5,0" />
+              </svg>
+              Equipment dock
+            </li>
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <g class="tradestation">
+                  <circle r="4" />
+                  <line x1="-2.5" y1="0" x2="2.5" y2="0" />
+                  <line x1="0" y1="-2.5" x2="0" y2="2.5" />
+                </g>
+              </svg>
+              Trade station
+            </li>
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <polygon
+                  class="freeport"
+                  points="0,-5.2 4.5,-2.6 4.5,2.6 0,5.2 -4.5,2.6 -4.5,-2.6"
+                />
+              </svg>
+              Free port
+            </li>
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <g class="piratebase">
+                  <line x1="-4" y1="-4" x2="4" y2="4" />
+                  <line x1="4" y1="-4" x2="-4" y2="4" />
+                </g>
+              </svg>
+              Pirate base
+            </li>
+            <li>
+              <svg class="station-legend-icon" viewBox="-6 -6 12 12" aria-hidden="true">
+                <g class="khaak_hive">
+                  <polygon points="0,-5.5 1.9,0 0,5.5 -1.9,0" />
+                  <polygon points="-5.5,0 0,-1.9 5.5,0 0,1.9" />
+                </g>
+              </svg>
+              Kha'ak hive sector
+            </li>
+          </ul>
+        </section>
+        <section class="legend-section">
+          <h2>Connections</h2>
+          <ul class="legend">
+            <li><span class="swatch jump_gate"></span> Jump gate</li>
+            <li><span class="swatch accelerator"></span> Accelerator</li>
+            <li><span class="swatch superhighway"></span> Superhighway</li>
+          </ul>
+        </section>
       </aside>
-    </main>
-    <script type="module" src="map.js"></script>
+      <main class="map-stage">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Galaxy map"></svg>
+        <aside class="vibe-disclaimer" role="note" aria-label="Disclaimer">
+          <svg class="vibe-disclaimer-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="#d06070" />
+            <rect x="11" y="6" width="2" height="9" rx="1" fill="#fff" />
+            <circle cx="12" cy="18" r="1.2" fill="#fff" />
+          </svg>
+          <div class="vibe-disclaimer-text">
+            <p class="vibe-disclaimer-title">Vibe coded alert</p>
+            <p class="vibe-disclaimer-body">
+              The code and contents of this web page were created and transplanted
+              from game data with extensive usage of AI agents. There may be factual
+              errors presented on this page.
+            </p>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="map/map.js"></script>
   </body>
 </html>

@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: #152033;
+  font-family: var(--font);
+  font-size: 0.88rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 650;
+}

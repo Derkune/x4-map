@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X4 Production Chart</title>
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="prod/prod.css" />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">Map</a>
+      <a href="production.html" aria-current="page">Production Graph</a>
+    </nav>
+    <div class="app">
+      <aside class="panel" aria-label="Production chart">
+        <h1>X4 Production Chart</h1>
+        <p class="map-version">X4 Foundations 9.00</p>
+        <p class="hint">
+          Click a ware or category to highlight its chain: orange for what builds
+          it, light blue for what it feeds. Nearer links are brighter. Click empty
+          space or Clear to reset.
+        </p>
+        <ul class="legend relation-legend">
+          <li><span class="swatch rel-upstream"></span> Builds this (upstream)</li>
+          <li><span class="swatch rel-downstream"></span> Fed by this (downstream)</li>
+        </ul>
+        <section class="filter-section">
+          <button type="button" id="clear-selection" class="clear-btn" disabled>
+            Clear selection
+          </button>
+        </section>
+        <section class="filter-section" id="selection-section">
+          <h2>Selection</h2>
+          <p id="selection-empty" class="hint">None</p>
+          <div id="selection-detail" hidden>
+            <p id="selection-name" class="selection-name"></p>
+            <p id="selection-meta" class="hint"></p>
+            <p id="selection-counts" class="hint"></p>
+            <ul id="selection-members" class="member-list" hidden></ul>
+          </div>
+        </section>
+        <section class="legend-section">
+          <h2>Columns</h2>
+          <ul class="legend">
+            <li><span class="swatch col-resources"></span> Resources</li>
+            <li><span class="swatch col-refined"></span> Refined</li>
+            <li><span class="swatch col-agriculture"></span> Agriculture</li>
+            <li><span class="swatch col-hightech"></span> High-tech</li>
+            <li><span class="swatch col-hab"></span> Hab supplies</li>
+            <li><span class="swatch col-shiptech"></span> Shiptech</li>
+            <li><span class="swatch col-sink"></span> Construction sinks</li>
+          </ul>
+        </section>
+      </aside>
+      <main class="map-stage">
+        <svg
+          id="chart"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Production chart"
+        ></svg>
+        <aside class="vibe-disclaimer" role="note" aria-label="Disclaimer">
+          <svg class="vibe-disclaimer-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="#d06070" />
+            <rect x="11" y="6" width="2" height="9" rx="1" fill="#fff" />
+            <circle cx="12" cy="18" r="1.2" fill="#fff" />
+          </svg>
+          <div class="vibe-disclaimer-text">
+            <p class="vibe-disclaimer-title">Vibe coded alert</p>
+            <p class="vibe-disclaimer-body">
+              The code and contents of this web page were created and transplanted
+              from game data with extensive usage of AI agents. There may be factual
+              errors presented on this page.
+            </p>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
+    <script type="module" src="prod/prod.js"></script>
+  </body>
+</html>

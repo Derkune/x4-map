@@ -1024,11 +1024,10 @@ function setupViewport(svg, world, clusters) {
   }
 
   function panByClientDelta(clientX, clientY) {
-    const rect = svg.getBoundingClientRect();
-    const dx = ((clientX - lastX) / rect.width) * view.w;
-    const dy = ((clientY - lastY) / rect.height) * view.h;
-    view.x -= dx;
-    view.y -= dy;
+    const prev = clientToSvg(lastX, lastY);
+    const next = clientToSvg(clientX, clientY);
+    view.x -= next.x - prev.x;
+    view.y -= next.y - prev.y;
     lastX = clientX;
     lastY = clientY;
     applyView();
@@ -1138,9 +1137,9 @@ function setupViewport(svg, world, clusters) {
 
 async function main() {
   const [mapResponse, resourcesResponse, stationsResponse] = await Promise.all([
-    fetch("map_data.json"),
-    fetch("sector_resources.json"),
-    fetch("sector_stations.json"),
+    fetch("map/map_data.json"),
+    fetch("map/sector_resources.json"),
+    fetch("map/sector_stations.json"),
   ]);
   if (!mapResponse.ok) {
     throw new Error(`Failed to load map_data.json (${mapResponse.status})`);
