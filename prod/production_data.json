@@ -1758,7 +1758,7 @@
     },
     {
       "id": "sink_station_prod_modules",
-      "name": "Production modules (Claytronics & Hull Parts)",
+      "name": "Station building modules (Claytronics & Hull Parts)",
       "kind": "sink",
       "group": "station",
       "column": "sink",
