@@ -546,6 +546,7 @@ function renderChart(data) {
   let lastX = 0;
   let lastY = 0;
   let pinchDistance = 0;
+  let touchActive = false;
   let touchPanning = false;
   const DRAG_THRESHOLD = 5;
 
@@ -662,6 +663,7 @@ function renderChart(data) {
 
   function stopPan() {
     dragging = false;
+    touchActive = false;
     touchPanning = false;
     stage?.classList.remove("dragging");
   }
@@ -681,10 +683,10 @@ function renderChart(data) {
         pinchDistance = 0;
         return;
       }
-      touchPanning = true;
+      touchActive = true;
+      touchPanning = false;
       lastX = touches[0].clientX;
       lastY = touches[0].clientY;
-      stage?.classList.add("dragging");
     },
     { passive: false },
   );
@@ -706,7 +708,13 @@ function renderChart(data) {
         pinchDistance = distance;
         return;
       }
-      if (!touchPanning || touches.length !== 1) return;
+      if (!touchActive || touches.length !== 1) return;
+      const dist = Math.hypot(touches[0].clientX - lastX, touches[0].clientY - lastY);
+      if (!touchPanning) {
+        if (dist < DRAG_THRESHOLD) return;
+        touchPanning = true;
+        stage?.classList.add("dragging");
+      }
       panByClientDelta(touches[0].clientX, touches[0].clientY);
     },
     { passive: false },
@@ -714,8 +722,14 @@ function renderChart(data) {
 
   function endTouch(event) {
     event.preventDefault();
+    const wasActive = touchActive;
+    const wasPanning = touchPanning;
+    const wasPinching = pinchDistance > 0;
     pinchDistance = 0;
     stopPan();
+    if (event.type !== "touchend" || !wasActive || wasPanning || wasPinching) return;
+    const touch = event.changedTouches[0];
+    if (touch) selectOrClearAt(touch.clientX, touch.clientY);
   }
   svg.addEventListener("touchend", endTouch, { passive: false });
   svg.addEventListener("touchcancel", endTouch, { passive: false });
