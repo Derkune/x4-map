@@ -81,6 +81,116 @@ function flatTopHexPoints(cx, cy, size = HEX_PIXEL_SIZE) {
   return points.join(" ");
 }
 
+/** Fraction of hex size to inset link endpoints toward the border. */
+const LINK_INSET_FACTOR = 0.6;
+/** Minimum visible stub length when insets would collapse a neighbor link. */
+const LINK_MIN_STUB = 14;
+
+/**
+ * Shorten a center-to-center link so it sits near hex borders (visible for
+ * neighbors when drawn above fills) without crossing sector labels.
+ * @param {number} ax
+ * @param {number} ay
+ * @param {number} bx
+ * @param {number} by
+ * @param {number} insetA
+ * @param {number} insetB
+ * @returns {{ x1: number, y1: number, x2: number, y2: number }|null}
+ */
+function shortenLinkEndpoints(ax, ay, bx, by, insetA, insetB) {
+  const dx = bx - ax;
+  const dy = by - ay;
+  const dist = Math.hypot(dx, dy);
+  if (dist < 1e-6) return null;
+  const ux = dx / dist;
+  const uy = dy / dist;
+  if (insetA + insetB >= dist) {
+    const half = Math.min(LINK_MIN_STUB / 2, dist * 0.2);
+    const mid = dist / 2;
+    return {
+      x1: ax + ux * (mid - half),
+      y1: ay + uy * (mid - half),
+      x2: ax + ux * (mid + half),
+      y2: ay + uy * (mid + half),
+    };
+  }
+  return {
+    x1: ax + ux * insetA,
+    y1: ay + uy * insetA,
+    x2: bx - ux * insetB,
+    y2: by - uy * insetB,
+  };
+}
+
+/** Chord-length fraction for quadratic bulge (clamped by min/max). */
+const LINK_CURVE_FACTOR = 0.11;
+/** Min perpendicular control-point offset so short links still separate. */
+const LINK_CURVE_MIN = 8;
+/** Max perpendicular control-point offset in pixels. */
+const LINK_CURVE_MAX = HEX_PIXEL_SIZE * 0.35;
+
+/**
+ * Deterministic hash → signed unit in (-1, 1], stable across reloads.
+ * @param {string} a
+ * @param {string} b
+ * @param {string} type
+ * @returns {number}
+ */
+function linkCurveSign(a, b, type) {
+  const key = `${a}\0${b}\0${type}`;
+  let hash = 2166136261;
+  for (let i = 0; i < key.length; i += 1) {
+    hash ^= key.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  // Map to odd-ish range away from zero so curves stay visible.
+  const u = ((hash >>> 0) % 2001) / 1000 - 1; // [-1, 1]
+  return u >= 0 ? Math.max(0.35, u) : Math.min(-0.35, u);
+}
+
+/**
+ * Quadratic control point offset perpendicular to the chord.
+ * @param {number} x1
+ * @param {number} y1
+ * @param {number} x2
+ * @param {number} y2
+ * @param {string} a
+ * @param {string} b
+ * @param {string} type
+ * @returns {{ cx: number, cy: number }|null}
+ */
+function linkCurveControl(x1, y1, x2, y2, a, b, type) {
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const dist = Math.hypot(dx, dy);
+  if (dist < 1e-6) return null;
+  const amp = Math.min(
+    LINK_CURVE_MAX,
+    Math.max(LINK_CURVE_MIN, dist * LINK_CURVE_FACTOR),
+  );
+  const offset = amp * linkCurveSign(a, b, type);
+  const px = -dy / dist;
+  const py = dx / dist;
+  return {
+    cx: (x1 + x2) / 2 + px * offset,
+    cy: (y1 + y2) / 2 + py * offset,
+  };
+}
+
+/**
+ * SVG path `d` for a curved link (quadratic Bézier).
+ * @param {number} x1
+ * @param {number} y1
+ * @param {number} x2
+ * @param {number} y2
+ * @param {number} cx
+ * @param {number} cy
+ * @returns {string}
+ */
+function linkCurvePathD(x1, y1, x2, y2, cx, cy) {
+  return `M ${x1} ${y1} Q ${cx} ${cy} ${x2} ${y2}`;
+}
+
 /**
  * @param {string|null|undefined} dlc
  */
@@ -88,10 +198,96 @@ function packCode(dlc) {
   return dlc || BASE_PACK_CODE;
 }
 
+/** Inset parent size so sub strokes sit just inside the parent outline. */
+const PARENT_PACK_INSET = 1;
+
 /**
- * Pack multi-sector offsets into the parent hex. Preserve compass bearings from
- * the sector centroid, but place every sub-hex on a shared ring so they sit
- * centered and nearly touch (in-game snug look).
+ * Circular mean of angles (radians).
+ * @param {number[]} angles
+ */
+function circularMean(angles) {
+  let sx = 0;
+  let sy = 0;
+  for (const a of angles) {
+    sx += Math.cos(a);
+    sy += Math.sin(a);
+  }
+  if (sx * sx + sy * sy < 1e-12) return angles[0] || 0;
+  return Math.atan2(sy, sx);
+}
+
+/**
+ * True if (x, y) lies inside a flat-top hex of circumradius R at the origin.
+ * Flats face 30° + 60°·k (vertices at 0° + 60°·k).
+ * @param {number} x
+ * @param {number} y
+ * @param {number} R
+ */
+function pointInFlatTopHex(x, y, R) {
+  const limit = (R * SQRT3) / 2;
+  for (let i = 0; i < 6; i += 1) {
+    const n = (Math.PI / 180) * (30 + 60 * i);
+    if (x * Math.cos(n) + y * Math.sin(n) > limit + 1e-9) return false;
+  }
+  return true;
+}
+
+/**
+ * Largest sub-hex circumradius such that mutually touching sub-hexes at the
+ * given pack angles stay inside the parent (ring = ringFactor · subSize).
+ * @param {number[]} packAngles
+ * @param {number} ringFactor
+ * @param {number} parentR
+ */
+function maxSubSizeInParent(packAngles, ringFactor, parentR) {
+  let lo = 0;
+  let hi = parentR;
+  for (let iter = 0; iter < 40; iter += 1) {
+    const mid = (lo + hi) / 2;
+    const ring = mid * ringFactor;
+    let fits = true;
+    outer: for (const angle of packAngles) {
+      const ox = ring * Math.cos(angle);
+      const oy = ring * Math.sin(angle);
+      for (let i = 0; i < 6; i += 1) {
+        const a = (Math.PI / 180) * (60 * i);
+        const vx = ox + mid * Math.cos(a);
+        const vy = oy + mid * Math.sin(a);
+        if (!pointInFlatTopHex(vx, vy, parentR)) {
+          fits = false;
+          break outer;
+        }
+      }
+    }
+    if (fits) lo = mid;
+    else hi = mid;
+  }
+  return lo;
+}
+
+/**
+ * Snap a pack rotation onto the parent flat-top vertex lattice (0° + 60°·k)
+ * so outer sub-hex tips meet parent vertices. Preserves nearest game orientation.
+ * @param {number} alphaGame
+ * @param {number} n
+ */
+function snapPackAlphaToVertices(alphaGame, n) {
+  const lattice = Math.PI / 3; // 60°
+  if (n === 2) {
+    // Opposite-vertex axes are undirected; unique axes at 0°, 60°, 120°.
+    let a = ((alphaGame % Math.PI) + Math.PI) % Math.PI;
+    const k = Math.round(a / lattice) % 3;
+    return k * lattice;
+  }
+  // n≥3: rotating by 60° walks the vertex-aimed placements.
+  return Math.round(alphaGame / lattice) * lattice;
+}
+
+/**
+ * Pack multi-sector offsets into the parent hex.
+ * Doubles: opposite, tips meet vertex-to-vertex at the center, outer tips on
+ * parent vertices. Triples: equilateral edge-touch, outer tips on parent vertices.
+ * Game bearings set circular order; rotation snaps to the vertex lattice.
  * @param {Sector[]} sectors
  * @returns {{ offsets: Map<string, {x:number,y:number}>, subSize: number }}
  */
@@ -135,27 +331,35 @@ function layoutClusterSectors(sectors) {
   }
 
   const sorted = [...angled].sort((a, b) => a.angle - b.angle);
-  let minGap = 2 * Math.PI;
-  for (let i = 0; i < sorted.length; i += 1) {
-    let gap = sorted[(i + 1) % sorted.length].angle - sorted[i].angle;
-    if (gap <= 0) gap += 2 * Math.PI;
-    if (gap < minGap) minGap = gap;
-  }
-  // Guard against near-coincident angles.
-  minGap = Math.max(minGap, (2 * Math.PI) / n * 0.5);
+  const step = (2 * Math.PI) / n;
+  const alphaGame = circularMean(sorted.map((s, i) => s.angle - i * step));
+  const alpha = snapPackAlphaToVertices(alphaGame, n);
+  /** @type {{ name: string, packAngle: number }[]} */
+  const packed = sorted.map((s, i) => ({
+    name: s.name,
+    packAngle: alpha + i * step,
+  }));
 
-  const parentR = HEX_PIXEL_SIZE * 0.98;
-  const touch = HEX_NEIGHBOR_FACTOR * 0.94;
-  const halfChord = Math.sin(minGap / 2);
-  // r + subSize <= parentR, and 2 r sin(gap/2) ≈ touch * subSize
-  const subSize =
-    (2 * parentR * halfChord) / (touch + 2 * halfChord);
-  const ring = Math.max(parentR - subSize, subSize * 0.55);
+  // n=2: ring = s → centers 2s apart → vertex-to-vertex at the origin.
+  // n=3: ring = s → centers s·√3 apart → shared edges; outer tips on vertices.
+  // n>3 (none in data): equal-angle ring with neighbor edge-touch.
+  const ringFactor =
+    n === 2 || n === 3
+      ? 1
+      : HEX_NEIGHBOR_FACTOR / (2 * Math.sin(Math.PI / n));
 
-  for (const { name, angle } of angled) {
+  const parentR = HEX_PIXEL_SIZE - PARENT_PACK_INSET;
+  const subSize = maxSubSizeInParent(
+    packed.map((p) => p.packAngle),
+    ringFactor,
+    parentR,
+  );
+  const ring = subSize * ringFactor;
+
+  for (const { name, packAngle } of packed) {
     offsets.set(name, {
-      x: ring * Math.cos(angle),
-      y: ring * Math.sin(angle),
+      x: ring * Math.cos(packAngle),
+      y: ring * Math.sin(packAngle),
     });
   }
   return { offsets, subSize };
@@ -634,9 +838,10 @@ function renderMap(data, resourcesData, stationsData) {
   stationIconsLayer.setAttribute("id", "station-icons");
   const labelsLayer = document.createElementNS("http://www.w3.org/2000/svg", "g");
   labelsLayer.setAttribute("id", "labels");
+  // Links above hex fills so neighbor bridges stay visible; below icons/labels.
   root.append(
-    linksLayer,
     hexesLayer,
+    linksLayer,
     resourceDotsLayer,
     stationIconsLayer,
     labelsLayer,
@@ -651,15 +856,45 @@ function renderMap(data, resourcesData, stationsData) {
     const bCluster = sectorToCluster.get(link.b);
     if (!aPx || !bPx || !aCluster || !bCluster) continue;
 
-    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    const sizeA = clusterSubSize.get(aCluster.id) || HEX_PIXEL_SIZE;
+    const sizeB = clusterSubSize.get(bCluster.id) || HEX_PIXEL_SIZE;
+    const shortened = shortenLinkEndpoints(
+      aPx.x,
+      aPx.y,
+      bPx.x,
+      bPx.y,
+      sizeA * LINK_INSET_FACTOR,
+      sizeB * LINK_INSET_FACTOR,
+    );
+    if (!shortened) continue;
+
+    const control = linkCurveControl(
+      shortened.x1,
+      shortened.y1,
+      shortened.x2,
+      shortened.y2,
+      link.a,
+      link.b,
+      link.type,
+    );
+    if (!control) continue;
+
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
     line.classList.add("link", link.type);
     if (link.oneWay) line.classList.add("one-way");
     line.dataset.a = link.a;
     line.dataset.b = link.b;
-    line.setAttribute("x1", String(aPx.x));
-    line.setAttribute("y1", String(aPx.y));
-    line.setAttribute("x2", String(bPx.x));
-    line.setAttribute("y2", String(bPx.y));
+    line.setAttribute(
+      "d",
+      linkCurvePathD(
+        shortened.x1,
+        shortened.y1,
+        shortened.x2,
+        shortened.y2,
+        control.cx,
+        control.cy,
+      ),
+    );
     linksLayer.append(line);
     linkEls.push(line);
   }
